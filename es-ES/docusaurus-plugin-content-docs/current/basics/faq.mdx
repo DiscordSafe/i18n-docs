@@ -4,7 +4,7 @@ title: Preguntas frecuentes (FAQ)
 sidebar_label: Preguntas frecuentes
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
-import '../../src/css/discord.css';
+import '../../../../../src/css/discord.css';
 
 Preguntas frecuentes acerca de D-Safe y sus funciones o comandos.
 
@@ -19,16 +19,16 @@ Para ver el actual prefix del bot ponga ``@D-Safe prefix``.
 :::
 
 ## 2. ¿Qué es una ID?
-> Ve a [como copiar IDs](ayuda/como-copiar-ids.md)
+> Ve a [como copiar IDs](copiar-ids)
 
 ## 3. ¿Cómo puedo reportar un usuario a Discord?
-> Ve a [como reportar correctamente a Discord](guide/reportar-discord.mdx)
+> Ve a [como reportar correctamente a Discord](reportar-discord)
 
 ## 4. No quiero que el bot banee a un usuario cuando uso `forceban`.
 Si no quieres que un usuario sea baneado al usar el forceban, puedes ignorarlo usando el comando ``d.whitelist add UsuarioID``.
 
 ## 5. ¿Cómo puedo reportar usando a D-Safe?
-> Ve a [como reportar usando el bot](guide/reportar.mdx)
+> Ve a [como reportar usando el bot](reportar)
 
 ## 6. El comando de `clear` no funciona.
 Si el bot no borra los mensajes revisa que has seleccionado una cantidad de mensajes después del comando, si no revisa que el bot tenga permisos de borrar mensajes y vuelve a intentarlo poniendo una cantidad entre **1-100**, si después de comprobar todo esto no lo borra seguramente sea porque discord no permite que los bots borren mensajes después de **14** días.
@@ -79,7 +79,7 @@ Si su ordenador no tiene una opción de sacar capturas de pantalla puede hacerlo
 Normalmente si no tiene una piedra es sencillo y depende de cada dispositivo, después solo deberá entrar a [imgur](https://imgur.com/upload) subir la imagen y poner el enlace.
 
 ## 9. ¿Cómo funciona x comando?
-Puedes ver la descripción de los comandos y su uso en la [lista de comandos](commands.mdx) o usando el comando ``d.help Comando``.
+Puedes ver la descripción de los comandos y su uso en la [lista de comandos](commands) o usando el comando ``d.help Comando``.
 
 ## 10. ¿Cuánto para que me hagas un bot?
 Lo siento, nuestro talento no se compra ;).
@@ -92,17 +92,17 @@ Podrás ver los motivos de por qué un usuario está en el forceban usando el co
 
 
 <DiscordMessages>
-    <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-                        <discord-embed slot="embeds" embed-title="Información del baneo" color="#fe635a" thumbnail="https://i.imgur.com/0CeIqto.png">
-                            <discord-embed-fields slot="fields">
-                                <discord-embed-field field-title="❯ Usuario" inline="" inline-index="0"><discord-mention highlight="" class="discord-mention discord-user-mention hydrated">UsuarioMalicioso</discord-mention> - <code>660479309416235029</code></discord-embed-field>
-                                <discord-embed-field field-title="❯ Razón" inline="" inline-index="0">Raider.</discord-embed-field>
-                                <discord-embed-field field-title="❯ Prueba(s)" inline="" inline-index="0">https://imgur.com/xyz</discord-embed-field>
-                                <discord-embed-field field-title="❯ Tiempo" inline="" inline-index="0">Hasta el día 01-03-2021</discord-embed-field>
-                            </discord-embed-fields>
-                            <span slot="footer">Puede ignorar a este miembro del forceban usando d.whitelist.</span>
-                        </discord-embed>
-                    </discord-message>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
+      <discord-embed slot="embeds" embed-title="Información del baneo" color="#fe635a" thumbnail="https://i.imgur.com/0CeIqto.png">
+        <discord-embed-fields slot="fields">
+        <discord-embed-field field-title="❯ Usuario" inline="" inline-index="0"><discord-mention highlight="" class="discord-mention discord-user-mention hydrated">UsuarioMalicioso</discord-mention> - <code>660479309416235029</code></discord-embed-field>
+        <discord-embed-field field-title="❯ Razón" inline="" inline-index="0">Raider.</discord-embed-field>
+        <discord-embed-field field-title="❯ Prueba(s)" inline="" inline-index="0">https://imgur.com/xyz</discord-embed-field>
+        <discord-embed-field field-title="❯ Tiempo" inline="" inline-index="0">Hasta el día 01-03-2021</discord-embed-field>
+        </discord-embed-fields>
+        <span slot="footer">Puede ignorar a este miembro del forceban usando d.whitelist.</span>
+      </discord-embed>
+      </discord-message>
 </DiscordMessages>
 
 ## 13. ¿Cómo puedo apelar para que me saquen del forceban?

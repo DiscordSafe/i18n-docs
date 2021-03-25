@@ -5,7 +5,7 @@ sidebar_label: D-Safe Premium
 ---
 Información acerca de D-Safe Premium.
 
-![Svg](../../static/img/premium.svg)
+![Svg](/img/premium.svg)
 
 # ¿Qué es?
 Es un beneficio premium para Partners, Safers y donadores, que ofrece una gran cantidad de ventajas y beneficios a cambio de apoyarnos.

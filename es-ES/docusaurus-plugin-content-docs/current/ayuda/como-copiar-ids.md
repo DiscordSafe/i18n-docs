@@ -14,11 +14,11 @@ Un ID, es como un identificador que puedes encontrar en los usuarios, canales, s
 
 ## 1. Debes activar el modo desarrollador.
 - **En PC:** Tan solo ve a ``Ajustes > Apariencia > Avanzado > Modo Desarrollador``.
-![Gif](../../static/img/ids-gif1.gif ':size=720x450')
+![Gif](/img/ids-gif1.gif ':size=720x450')
 
 - **En movil/celular:** Ve a ``Ajustes de usuario > Ajustes de aplicación > Comportamiento > Modo Desarrollador``.
 
-![Img](../../static/img/ids-celular.png)
+![Img](/img/ids-celular.png)
 
 ## 2. Genial ¿por donde empiezo?
 Si has seguido el paso anterior, ahora tan solo tienes que:
@@ -26,7 +26,7 @@ Si has seguido el paso anterior, ahora tan solo tienes que:
 - **En PC:** Click derecho al usuario, mensaje, canal, rol, etc.
 - **En movil/celular:** Mantén pulsado, perfil del usuario u opciones.
 
-![Img](../../static/img/ids-1.png)
+![Img](/img/ids-1.png)
 
 ## ¡Eso es todo! En solo 2 pasos.
 
@@ -35,9 +35,9 @@ Si has seguido el paso anterior, ahora tan solo tienes que:
 ## ¿Y cómo copio la ID de un grupo o un MD?
 Pues podrás hacerlo desde el navegador o usando click derecho en PC.
 
-![Img](../../static/img/ids-2.png) 
+![Img](/img/ids-2.png) 
 
-![Img](../../static/img/ids-4.png)
+![Img](/img/ids-4.png)
 
 :::info Mi duda no aparece aquí
 Pregunta en nuestro [servidor público](https://discordsafe.com/discord).

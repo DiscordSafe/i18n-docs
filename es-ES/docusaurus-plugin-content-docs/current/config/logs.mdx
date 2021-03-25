@@ -1,0 +1,24 @@
+---
+id: logs
+title: Logs
+sidebar_label: Logs
+---
+import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
+import '../../../../../src/css/discord.css';
+
+
+Los logs permiten a los administradores **ver todos los eventos que ocurren en el servidor** \(roles borrados, roles añadidos, entradas, salidas, mensajes borrados, etc\).
+
+* Para establecer un canal donde se manden los logs usa `d.logs` dentro del canal o `d.logs #Canal`.
+* Para desactivar los logs use `d.logs disable`.
+
+<DiscordMessages>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
+  <discord-embed slot="embeds" author-image="https://i.imgur.com/rhJnYCl.png" author-name="Usuario#0000" embed-title="Mensaje Eliminado" color="#eb5e54" thumbnail="https://i.imgur.com/rhJnYCl.png">jaja eres tonto
+  <discord-embed-fields slot="fields">
+    <discord-embed-field field-title="Canal." inline="" inline-index="1"><discord-mention type="channel">general</discord-mention> - <code>504679535598501898</code></discord-embed-field>
+    </discord-embed-fields>
+    <span slot="footer">Autor: 318327338226155541 | Mensaje ID: 727651117785415741</span>
+  </discord-embed>
+  </discord-message>
+</DiscordMessages>

@@ -1,41 +1,36 @@
 ---
 id: home
-title: Léeme
+title: ¿Qué es D-Safe?
 slug: /
-author: Vicente015
-author_title: Desarrollador de DiscordSafe
-author_url: https://github.com/Vicente015
-author_image_url: https://graph.facebook.com/611217057/picture/?height=200&width=200
-tags: [hello, docusaurus-v2]
 ---
-:::note Introducción
-D-Safe (Discord Safe) es un bot desarrollado para resolver todos tus problemas como moderador.
+D-Safe es un bot de moderación, utilidad y seguridad creado para **resolver todos tus problemas como moderador**.
 
-Con nuestra documentación queremos conseguir que usar nuestro bot sea **lo más sencillo posible** a comparación de otros bots de moderación que son difíciles de configurar y de entender.
-:::
+* * *
 
-## ¿Por dónde empiezo?
+# Qué ofrece
+* **Verificación** <br/> 
+  Verifique a los usuarios nuevos que entran en su servidor para comprobar que no son maliciosos.
 
-:::info Antes de empezar
-Debes invitar al [bot](https://discordsafe.com/invite).
-:::
+* **Filtros** <br/> 
+  Mantenga los chats de su servidor magníficamente limpios sin contenido extraño con nuestros filtros.
 
-Para empezar, tan solo tienes que navegar por el menú de la izquierda.
+* **Moderación** <br/> 
+  Modere con ban, kick, mute, anti-spam y registros de todos los eventos.
 
-También puedes **empezar por la [configuración paso a paso](./intro/configuration).**
+* **Sugerencias** <br/>
+  Reciba sugerencias de sus usuarios, autoacepte sugerencias, cambie la paleta de colores, customize los emojis.
 
-## Soporte
-Si tienes alguna duda o algo no va como debería comprueba las [preguntas frecuentes](intro/faq.mdx), si no resuelve tu duda, **te daremos ayuda** en nuestro [servidor de soporte](https://discordsafe.com/discord).
+* **Mucho más** <br/> 
+  Modo alarma, palabras bloqueadas, logs, baneo de usuarios maliciosos, generador de contraseñas... 
 
+# ¿Por dónde empiezo?
+Empieza [invitando a D-Safe a tu servidor](intro/invite.md) en pocos clicks.
 
 ## Guía de emojis
 Usamos emojis para especificar los **permisos que necesitan los usuarios** al usar un comando o función, a continuación podrás ver la guía de emojis:
 
-| Emoji | Significado | Permisos | 
-| :--- | :--- | :--- | 
-| 👑 | Dueño del servidor | ```SERVER_OWNER``` | 
-| 🔨 | Administrador | ```ADMINISTRADOR```, ```MANAGE_GUILD```, ```MANAGE_ROLES``` | 
-| 🔧 | Moderador | ```BAN_MEMBERS```, ```KICK_MEMBERS```, ```MANAGE_MESSAGES``` | 
-
-
-### Una vez hayas leído lo anterior puedes continuar en la configuración paso a paso [aquí](intro/configuration.mdx).
+| Emoji  | Significado        | Permisos                                                  |
+| :----: | :----------------  | :-------------------------------------------------------  |
+|   👑   | Dueño del servidor | *Dueño del servidor*                                      |
+|   🔨   |   Administrador    | *Administrador, Gestionar servidor, Gestionar roles*      |
+|   🔧   |     Moderador      | *Banear miembros, Expulsar miembros, Gestionar mensajes*  |
