@@ -1,5 +1,5 @@
 ---
-id: copiar-ids
+id: copy-ids
 title: Cómo copiar IDs en Discord
 sidebar_label: Cómo copiar IDs en Discord
 ---
@@ -7,12 +7,12 @@ Guía detallada sobre cómo copiar IDs en Discord.
 
 Si estás aquí es porque quieres saber como copiar un ID, pero antes debes saber lo qué es.
 
-# ¿Qué es un ID? {#¿qué-es-un-id}
+# ¿Qué es un ID? {#what-is-id}
 Un ID, es como un identificador que puedes encontrar en los usuarios, canales, servidores, roles, emojis que como su palabra dice, sirve para identificarlos, todos los usuarios, canales, etc tienen uno y son normalmente usados por desarrolladores de bots.
 
-# Guía paso a paso {#guía-paso-a-paso}
+# Guía paso a paso 
 
-## 1. Debes activar el modo desarrollador. {#1-debes-activar-el-modo-desarrollador}
+## 1. Debes activar el modo desarrollador. {#1-developer-mode}
 - **En PC:** Tan solo ve a ``Ajustes > Apariencia > Avanzado > Modo Desarrollador``.
 ![Gif](/img/ids-gif1.gif ':size=720x450')
 
@@ -20,7 +20,7 @@ Un ID, es como un identificador que puedes encontrar en los usuarios, canales, s
 
 ![Img](/img/ids-celular.png)
 
-## 2. Genial ¿por donde empiezo? {#2-genial-¿por-donde-empiezo}
+## 2. Genial ¿por donde empiezo? {#2-starting}
 Si has seguido el paso anterior, ahora tan solo tienes que:
 
 - **En PC:** Click derecho al usuario, mensaje, canal, rol, etc.
@@ -28,11 +28,11 @@ Si has seguido el paso anterior, ahora tan solo tienes que:
 
 ![Img](/img/ids-1.png)
 
-## ¡Eso es todo! En solo 2 pasos. {#¡eso-es-todo-en-solo-2-pasos}
+## ¡Eso es todo! En solo 2 pasos. 
 
 # Dudas {#dudas}
 
-## ¿Y cómo copio la ID de un grupo o un MD? {#¿y-cómo-copio-la-id-de-un-grupo-o-un-md}
+## ¿Y cómo copio la ID de un grupo o un MD? {#copy-group-id}
 Pues podrás hacerlo desde el navegador o usando click derecho en PC.
 
 ![Img](/img/ids-2.png) 

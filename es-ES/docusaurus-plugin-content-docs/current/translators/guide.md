@@ -4,21 +4,17 @@ title: Guía de traducción
 sidebar_label: Guía de traducción
 ---
 
-:::info
-Vaya, has encontrado algo secreto :think:
-:::
-
 ![Img](https://i.imgur.com/NYsAUU5.png)
 
-## Páginas dentro de la categoría {#páginas-dentro-de-la-categoría}
-### [Guía de traducción](guide.md). {#guía-de-traducción}
-### [Pautas de traducción](guidelines.md). {#pautas-de-traducción}
+## Páginas dentro de la categoría
+### [Guía de traducción](translators/guide.md).
+### [Pautas de traducción](translators/guidelines.md).
 
 # Guía de traducción {#guía-de-traducción-1}
 
 Bienvenid@ a la guía de traducción para traductores, aquí estará explicada la plataforma de traducción que usamos, cómo traducir y cosas a tener en cuenta.
 
-## Introducción {#introducción}
+## Introducción {#intro}
 Estamos usando [Weblate](https://weblate.org) alojado por nosotros desde la cuál puedes acceder desde [weblate.discordsafe.com](https://weblate.discordsafe.com), esta ofrece una gran cantidad de ventajas para mantener la traducción estable y limpia, **échale un ojo a su propia [guía](https://docs.weblate.org/es/latest/user/translating.html) sobre cómo traducir si quieres conocer más.**
 
 ### Como funciona {#como-funciona}
@@ -26,9 +22,9 @@ Tú traduces una cadena y dejas la sugerencia, los coordinadores o administrador
 
 ## Tener en cuenta {#tener-en-cuenta}
 * Al traduccir aceptas el siguiente **[acuerdo](https://weblate.discordsafe.com/contributor-agreement/d-safe/commands/)**.
-* Debes seguir las siguientes **[pautas de traducción](guidelines.md)**.
+* Debes seguir las siguientes **[pautas de traducción](translators/guidelines.md)**.
 
-## Gestión del proyecto y componentes {#gestión-del-proyecto-y-componentes}
+## Gestión del proyecto y componentes {#proyecto-y-componentes}
 Accediendo a la [página del proyecto](https://weblate.discordsafe.com/projects/d-safe/) podrás ver los componentes, es decir los distintos archivos de traducción del bot.
 
 Están divididos en lo siguiente:
@@ -62,12 +58,12 @@ Rellene la traducción y dele a sugerir para sugerir esa traducción y que un co
 
 **Dentro de la interfaz puede ver las siguientes cosas:** Recuerda
 
-### Menú de movimiento {#menú-de-movimiento}
+### Menú de movimiento {#menu-de-movimiento}
 Desde donde puedes moverte y filtrar las cadenas.
 
 ![Img](https://i.imgur.com/ZfgMo6n.png)
 
-### Traducción {#traducción}
+### Traducción {#translate}
 Desde donde puedes ver la traducción de origen y sugerir, aprovar o guardar traducciones.
 
 ![Img](https://i.imgur.com/t1ArDnz.png)
@@ -92,7 +88,7 @@ Desde donde puedes dejarnos comentarios sobre preguntas a los coordinadores/admi
 
 ![Img](https://i.imgur.com/DMA7Zj0.png)
 
-### Automatización {#automatización}
+### Automatización {#automate}
 De vez en cuando si varias cadenas tienen el mismo resultado, los bots automáticos la analizarán para sugerirte cambios para que uses los mismos términos.
 
 ![Img](https://i.imgur.com/GourF4m.png)
@@ -116,7 +112,7 @@ Automáticamente los bots hacen comprobaciones en las cadenas para asegurar un b
 ### Variables {#variables}
 Dentro de las traducciones te encontrarás con el contenido dentro de **{{ }}** resaltado, esto indica que debes dejar eso exactamente igual que en el origen ya que de cambiarlo seguramente rompas algo.
 
-### Saltos de línea {#saltos-de-línea}
+### Saltos de línea {#saltos}
 Los saltos de línea con el siguiente ícono indica que el texto baja una línea y estos debes respetarlos.
 
 ![Img](https://i.imgur.com/4cUJLFV.gif)
