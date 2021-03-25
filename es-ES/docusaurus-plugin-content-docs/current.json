@@ -18,5 +18,17 @@
   "sidebar.docs.link.Registro de cambios": {
     "message": "Registro de cambios",
     "description": "The label for link Registro de cambios in sidebar docs, linking to https://blog.discordsafe.com/categories/Registro%20de%20cambios"
+  },
+  "sidebar.docs.category.Conceptos básicos": {
+    "message": "Conceptos básicos",
+    "description": "The label for category Conceptos básicos in sidebar docs"
+  },
+  "sidebar.docs.category.Configuración": {
+    "message": "Configuración",
+    "description": "The label for category Configuración in sidebar docs"
+  },
+  "sidebar.docs.category.Guías Discord": {
+    "message": "Guías Discord",
+    "description": "The label for category Guías Discord in sidebar docs"
   }
 }
