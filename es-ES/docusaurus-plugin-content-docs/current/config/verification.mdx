@@ -23,7 +23,7 @@ Establezca la verificación de su servidor con uno de **nuestros poderosos modos
   </discord-message>
 </DiscordMessages>
 
-## Establecer el modo
+## Establecer el modo {#establecer-el-modo}
 Establezca el modo de verificación que más le convenga usando `d.verification setmode <Modo>`.
 Los modos de verificación son los siguientes:
 
@@ -39,7 +39,7 @@ Los modos de verificación son los siguientes:
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/656224418946744320.gif?1"></img> | El modo ha sido establecido a <code>captcha</code></discord-message>
 </DiscordMessages>
 
-## Establecer el canal
+## Establecer el canal {#establecer-el-canal}
 Debe establecer el canal de verificación donde se mandará el captcha, o donde esté el mensaje al que tengan que reaccionar o donde tienen que poner los comandos.
 
 Establezca el canal con `d.verification setchannel #Canal`.
@@ -49,7 +49,7 @@ Establezca el canal con `d.verification setchannel #Canal`.
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/656224418946744320.gif?1"></img> El canal ha sido establecido a <discord-mention type="channel">bienvenidas</discord-mention></discord-message>
 </DiscordMessages>
 
-## Establecer el rol de No verificado
+## Establecer el rol de No verificado {#establecer-el-rol-de-no-verificado}
 :::caution Aviso
 Usted tendrá que configurar este rol en su servidor para que solo vea los canales que usted quiera y que cuando se verifique tenga acceso completo al servidor.
 :::
@@ -64,7 +64,7 @@ Establezca el rol de No verificados con:
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/656224418946744320.gif?1"></img> | El rol ha sido establecido a <discord-mention class="discord-mention discord-user-mention">No verificado</discord-mention></discord-message>
 </DiscordMessages>
 
-## Establecer el rol de Usuario
+## Establecer el rol de Usuario {#establecer-el-rol-de-usuario}
 Este será el rol que se les dará a los nuevos usuarios al verificarse (normalmente el rol Usuario).
 
 El comando para establecerlo es `d.verification setuser @Rol`.
@@ -74,7 +74,7 @@ El comando para establecerlo es `d.verification setuser @Rol`.
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/656224418946744320.gif?1"></img> | El rol ha sido establecido a <discord-mention class="discord-mention discord-user-mention">Usuario</discord-mention></discord-message>
 </DiscordMessages>
 
-## Establecer el mensaje
+## Establecer el mensaje {#establecer-el-mensaje}
 :::caution Aviso
 **Solo es necesario este ajuste** en el modo **reaction**.
 :::
@@ -91,7 +91,7 @@ Configure el mensaje usando: `d.verification setmessage MensajeID`.
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/656224418946744320.gif?1"></img> | El mensaje ha sido establecido a <code>756893307325513795</code>.</discord-message>
 </DiscordMessages>
 
-## Establecer el mínimo de edad
+## Establecer el mínimo de edad {#establecer-el-mínimo-de-edad}
 Establezca el **mínimo de días que deben tener las cuentas** cuando se unen a su servidor, así evita que entren multicuentas o auto-bots de spam.
 
 * Configure el mínimo con: `d.verification setage <1-30 Días>`.
@@ -106,7 +106,7 @@ Establezca el **mínimo de días que deben tener las cuentas** cuando se unen a 
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>Has sido expulsado de <span class="bold">Servidor</span> porque su cuenta no supera el mínimo de <span class="bold">20</span> días.</discord-message>
 </DiscordMessages>
 
-## Establecer máximo de intentos
+## Establecer máximo de intentos {#establecer-máximo-de-intentos}
 :::caution Aviso
 **Este es un ajuste opcional** del modo **captcha**.
 :::
@@ -122,7 +122,7 @@ Puede volver a la cantidad por defecto con ``d.verification setattempts default`
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/656224418946744320.gif?1"></img> |  Se ha establecido el máximo de intentos de la verificación a <span class="bold">5 intentos</span>.</discord-message>
 </DiscordMessages>
 
-## Establecer máximo de minutos
+## Establecer máximo de minutos {#establecer-máximo-de-minutos}
 :::caution Aviso
 **Este es un ajuste opcional** del modo **captcha**.
 :::
