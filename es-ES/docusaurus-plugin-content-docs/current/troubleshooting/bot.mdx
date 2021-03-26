@@ -1,0 +1,66 @@
+---
+id: fix-bot
+title: Problemas con el bot
+sidebar_label: Problemas con el bot
+---
+import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
+import '../../../../../src/css/discord.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+¿Tienes problemas con el bot? Échale un ojo a esto
+
+## ¿Cuál es el prefijo del bot? {#prefix}
+:::tip Consejo
+El prefijo por defecto de D-Safe es `d.`, el de D-Safe Beta es `d!`.
+:::
+
+<Tabs
+  defaultValue="normal"
+  values={[
+    {label: 'D-Safe', value: 'normal'},
+    {label: 'D-Safe Beta', value: 'beta'}
+  ]}>
+  <TabItem value="normal">
+
+  Puedes escribir `D-Safe#5984 prefix` o ``<@461171501715161108> prefix`` para que te muestre su prefijo actual.
+
+  ![Default prefix msg](https://media.discordapp.net/attachments/585838930700533774/779475164937191494/unknown.png)
+
+  </TabItem>
+
+  <TabItem value="beta">
+
+  Puedes escribir `D-Safe Beta#8629 prefix` o ``<@779449695437062174> prefix`` para que te muestre su prefijo actual.
+
+  ![Default prefix msg](https://media.discordapp.net/attachments/585838930700533774/779475164937191494/unknown.png)
+
+  </TabItem>
+</Tabs>
+
+## El bot no responde o algo no va como debería. {#bot-dont-answer}
+*Si el bot no responde a tus comandos, intente lo siguiente:*
+
+1. **Asegúrate de que D-Safe esté online.**
+  * Si D-Safe está desconectado, pruebe a [invitarlo de nuevo](intro/invite.md), si sigue apareciendo desconectado vaya al paso 4.
+
+2. **Asegúrate de que estés usando el prefijo correcto.**
+  * Puedes comprobarlo siguiendo los pasos de [comprobar prefijo](#prefix).
+
+3. **Asegúrate de que D-Safe tenga permisos.**
+  * Dale permisos de `Administrador` para resolverlo.
+
+4. **Comprueba el canal de status en el servidor de soporte.**
+  * Si has seguido los pasos anterior y sigue sin responder consulte el canal de `#🚦▹status-estado` en [nuestro servidor de soporte](troubleshooting/support.mdx).
+
+### No bloquea las palabras bloqueadas {#blockword-not-working}
+La función de palabras bloqueadas ignoran a los usuarios con permisos de `Administrador`, así que verifique si esas personas que no les bloquea las palabras lo tienen.
+
+## No sé como funciona un comando {#how-does-cmd-works}
+Puedes ver la descripción de los comandos y su uso en la [lista de comandos](basics/commands.mdx) o usando el comando ``d.help nombre-comando``.
+
+## El comando de `clear` no funciona {#clear-not-working}
+Asegúrate de haber seleccionado una cantidad de mensajes válida entre `1-100` mensajes. El bot **no puede borrar mensajes superiores a 14 días**.
+
+## Ya he leído todo, no encuentro mi problema aquí {#im-idiot}
+Entonces, por favor [contacte con soporte](troubleshooting/support.mdx).

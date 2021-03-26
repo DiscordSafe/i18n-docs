@@ -7,8 +7,6 @@ D-Safe es un bot de moderación, utilidad y seguridad creado para **resolver tod
 
 * * *
 
-uwuwuuwuw
-
 # Qué ofrece {#features}
 * **Verificación** <br/> 
   Verifique a los usuarios nuevos que entran en su servidor para comprobar que no son maliciosos.
@@ -27,12 +25,3 @@ uwuwuuwuw
 
 # ¿Por dónde empiezo? {#getting-started}
 Empieza [invitando a D-Safe a tu servidor](intro/invite.md) en pocos clicks.
-
-## Guía de emojis {#emoji-guide}
-Usamos emojis para especificar los **permisos que necesitan los usuarios** al usar un comando o función, a continuación podrás ver la guía de emojis:
-
-| Emoji  | Significado        | Permisos                                                  |
-| :----: | :----------------  | :-------------------------------------------------------  |
-|   👑   | Dueño del servidor | *Dueño del servidor*                                      |
-|   🔨   |   Administrador    | *Administrador, Gestionar servidor, Gestionar roles*      |
-|   🔧   |     Moderador      | *Banear miembros, Expulsar miembros, Gestionar mensajes*  |
