@@ -41,7 +41,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="anti-iploggers">
 
-  **Obtén el filtro más avanzado que bloquea +800 iploggers siendo [premium](help/premium.md).**
+  **Obtén el filtro más avanzado que bloquea +800 iploggers siendo [premium](premium/premium.mdx).**
   **(El normal sigue siendo gratis).**
 
   Bloquea y borra todos los enlaces que sean iploggers destinados a obtener datos privados de los usuarios que entren.
@@ -56,7 +56,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="imgs">
 
-  **Obtén este filtro siendo [premium](help/premium.md).**
+  **Obtén este filtro siendo [premium](premium/premium.mdx).**
 
   Bloquea y borra todas las im&#xE1;genes que contengan gore o sean NSFW enviadas fueras de canales NSFW. 
   
@@ -78,6 +78,10 @@ import TabItem from '@theme/TabItem';
 
   ## Niveles:
 
+:::caution
+Estamos trabajando en mejorar el filtro de anti-spam, puede que algunas características estén temporalmente deshabilitadas, sentimos las molestias.
+:::
+
   Puedes indicar el nivel de **anti-spam** que quiera, por defecto o si no lo indica será el ``1``.
   
   Establece el nivel con: ``d.filter enable anti-spam level <Nivel>``
@@ -86,7 +90,7 @@ import TabItem from '@theme/TabItem';
   | :---: | :--- |
   | <img className="emoji-table" src="https://cdn.discordapp.com/emojis/755768668360540170.png?v=1"></img> **Nivel 1** | Prohíbe un mensaje con muchas mayúsculas o spam. | 
   | <img className="emoji-table" src="https://cdn.discordapp.com/emojis/755768668180316202.png?v=1"></img> **Nivel 2** | Prohíbe los mensajes duplicados, flood de mensajes, mayúsculas y spam. | 
-  | <img className="emoji-table" src="https://cdn.discordapp.com/emojis/755768668318728202.png?v=1"></img> **Nivel 3** | Prohíbe todos los mensajes duplicados, flood de mensajes, mayúsculas, copypastas y spam. | 
+  | <img className="emoji-table" src="https://cdn.discordapp.com/emojis/755768668318728202.png?v=1"></img> **Nivel 3** | Prohíbe todos los mensajes duplicados, mayúsculas, copypastas y spam. | 
 
 <DiscordMessages>
   <DiscordMessage author="Usuario" avatar="red">d.filter enable anti-spam level 3</DiscordMessage>
