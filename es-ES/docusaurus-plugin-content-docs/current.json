@@ -26,5 +26,21 @@
   "sidebar.docs.category.Guías Discord": {
     "message": "Guías Discord",
     "description": "The label for category Guías Discord in sidebar docs"
+  },
+  "sidebar.docs.category.Solución de problemas": {
+    "message": "Solución de problemas",
+    "description": "The label for category Solución de problemas in sidebar docs"
+  },
+  "sidebar.docs.category.Guías": {
+    "message": "Guías",
+    "description": "The label for category Guías in sidebar docs"
+  },
+  "sidebar.docs.category.Premium": {
+    "message": "Premium",
+    "description": "The label for category Premium in sidebar docs"
+  },
+  "sidebar.docs.category.Comunidad": {
+    "message": "Comunidad",
+    "description": "The label for category Comunidad in sidebar docs"
   }
 }
