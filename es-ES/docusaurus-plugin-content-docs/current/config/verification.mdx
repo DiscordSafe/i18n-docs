@@ -29,10 +29,10 @@ Los modos de verificación son los siguientes:
 
 | 🔧 Modo           | 📣 Descripción                                                                  | 📑 Requiere                                       | 🔐 Nivel protección |
 | :---------------: | :------------------------------------------------------------------------------ | :------------------------------------------------ | :---- |
-| **Approval**      | El usuario tiene que ser aprobado por un Administrador con `d.approve @Usuario` | Canal, Rol No Verificado, Rol Usuario.            | **4** |
-| **Captcha**       | El usuario tiene que completar correctamente un captcha.                        | Canal, Rol No Verificado, Rol Usuario.            | **3** |
-| **Reaction**      | El usuario tiene que reaccionar a un mensaje para acceder al servidor.          | Canal, Rol No Verificado, Rol Usuario, Mensaje.   | **2** |
-| **Verification**  | El usuario tiene que usar el comando `d.verifyme` para entrar.                  | Canal, Rol No Verificado, Rol Usuario.            | **1** |
+| **Approval**      | El usuario tiene que ser aprobado por un administrador con `d.approve @Usuario` | Canal, rol no nerificado, rol usuario.            | **4** |
+| **Captcha**       | El usuario tiene que completar correctamente un captcha.                        | Canal, rol no nerificado, rol usuario.            | **3** |
+| **Reaction**      | El usuario tiene que reaccionar a un mensaje para acceder al servidor.          | Canal, rol no verificado, rol usuario, mensaje.   | **2** |
+| **Verification**  | El usuario tiene que usar el comando `d.verifyme` para entrar.                  | Canal, rol no nerificado, rol usuario.            | **1** |
 
 <DiscordMessages>
   <DiscordMessage author="Usuario" avatar="red">d.verification setmode captcha</DiscordMessage>
@@ -49,14 +49,14 @@ Establezca el canal con `d.verification setchannel #Canal`.
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/656224418946744320.gif?1"></img> El canal ha sido establecido a <discord-mention type="channel">bienvenidas</discord-mention></discord-message>
 </DiscordMessages>
 
-## Establecer el rol de No verificado {#set-unverified}
+## Establecer el rol de no verificado {#set-unverified}
 :::caution Aviso
 Usted tendrá que configurar este rol en su servidor para que solo vea los canales que usted quiera y que cuando se verifique tenga acceso completo al servidor.
 :::
 
 Este será el rol que se les dará a los nuevos usuarios al entrar al servidor antes de verificarse.
 
-Establezca el rol de No verificados con:
+Establezca el rol de no verificados con:
 `d.verification setguest @Rol`.
 
 <DiscordMessages>
@@ -79,7 +79,7 @@ El comando para establecerlo es `d.verification setuser @Rol`.
 **Solo es necesario este ajuste** en el modo **reaction**.
 :::
 
-Establezca el mensaje al que tendrán que reaccionar los No Verificados al unirse a su servidor.
+Establezca el mensaje al que tendrán que reaccionar los no verificados al unirse a su servidor.
 **Importante,** el mensaje que establezca debe de estar dentro del canal que configuró anteriormente.
 
 Configure el mensaje usando: `d.verification setmessage MensajeID`. 
@@ -127,7 +127,7 @@ Puede volver a la cantidad por defecto con ``d.verification setattempts default`
 **Este es un ajuste opcional** del modo **captcha**.
 :::
 
-Establezca el **tiempo máximo de espera** en la verificación captcha **captcha**.
+Establezca el **tiempo máximo de espera** en la verificación **captcha**.
 
 Configure el máximo de intentos con ``d.verification settime [Número]`` (en minutos).
 
