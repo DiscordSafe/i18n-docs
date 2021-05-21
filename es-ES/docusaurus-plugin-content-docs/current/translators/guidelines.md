@@ -3,11 +3,11 @@ id: guidelines
 title: Pautas de traducción
 sidebar_label: Pautas de traducción
 ---
-# D-Safe - Pautas de traducción. {#d-safe---pautas-de-traducción}
+# D-Safe - Pautas de traducción. {#pautas}
 
 * NO elimine ningún símbolo proveniente de Markdown de Discord (negrita, itálica, bloque de código, etc). * _ `
   
-* NO debe traducir el contenido dentro de {{ }}.
+* NO debe traducir el contenido dentro de `{{ }}`.
 
 * NO debe traducir/cambiar los nombres de los comandos.
 

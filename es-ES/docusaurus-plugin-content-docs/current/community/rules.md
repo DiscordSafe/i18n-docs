@@ -19,7 +19,7 @@ sidebar_label: Reglas de la comunidad
 13. Está prohibido copiar, distribuir, modificar, usar de forma personal o comercial ilustraciones, diseños o logotipos, así como los de información, reglas y en el contenido de toda página web bajo el dominio de discordsafe.com que estén bajo la propiedad del equipo de D-Safe sin estar autorizado por los correspondientes autores debido a que incumple nuestras licencias.
 
 
-### Adicional:
+### Adicional: {#aditional}
 * Leer los temas de los canales antes de comentar.
 * Mantener el drama personal y peleas en MD.
 * No pedir roles, premium, o Discord Nitro.

@@ -6,18 +6,18 @@ sidebar_label: Guía de traducción
 
 ![Img](https://i.imgur.com/NYsAUU5.png)
 
-## Páginas dentro de la categoría
-### [Guía de traducción](translators/guide.md).
-### [Pautas de traducción](translators/guidelines.md).
+## Páginas dentro de la categoría {#menu}
+### [Guía de traducción](translators/guide.md). {#this}
+### [Pautas de traducción](translators/guidelines.md). {#pautas}
 
-# Guía de traducción {#guía-de-traducción-1}
+# Guía de traducción {#guide}
 
 Bienvenid@ a la guía de traducción para traductores, aquí estará explicada la plataforma de traducción que usamos, cómo traducir y cosas a tener en cuenta.
 
 ## Introducción {#intro}
 Estamos usando [Weblate](https://weblate.org) alojado por nosotros desde la cuál puedes acceder desde [weblate.discordsafe.com](https://weblate.discordsafe.com), esta ofrece una gran cantidad de ventajas para mantener la traducción estable y limpia, **échale un ojo a su propia [guía](https://docs.weblate.org/es/latest/user/translating.html) sobre cómo traducir si quieres conocer más.**
 
-### Como funciona {#como-funciona}
+### Como funciona {#how-works}
 Tú traduces una cadena y dejas la sugerencia, los coordinadores o administradores se encargar de revisarlas y decidir la mejor y si son aprobadas se envían al proyecto del código fuente donde ya estarán disponibles en las próximas versiones.
 
 ## Tener en cuenta {#tener-en-cuenta}
