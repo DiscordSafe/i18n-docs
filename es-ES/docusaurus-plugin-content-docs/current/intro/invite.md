@@ -16,7 +16,7 @@ Una vez hayas iniciado sesión con tu cuenta de Discord verás un menú como est
 
 ![Menú de autorización](https://i.imgur.com/HNX1oux.png)
 
-A continuación debes seleccionar un servidor y darle a "Continuar".
+A continuación, debes seleccionar un servidor y darle a "Continuar".
 
 ### Segundo paso {#second-step}
 Ahora deberas confirmar y te aparecerá una lista de todos los permisos que necesita D-Safe, continua dándole a "Autorizar".

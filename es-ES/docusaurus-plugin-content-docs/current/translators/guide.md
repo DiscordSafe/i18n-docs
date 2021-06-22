@@ -36,7 +36,7 @@ Están divididos en lo siguiente:
 
 ![Img](https://i.imgur.com/qoeKFwv.png)
   
-Para traducir un componente haga click y entre en él, a continuación verá lo siguiente:
+Para traducir un componente haga click y entre en él, a continuación, verá lo siguiente:
 
 ![Img](https://i.imgur.com/hnxp8gS.png)
 
@@ -50,7 +50,7 @@ Se les mostrará una serie de estados:
 3. Cadenas sin traducir, cadenas que necesitan traducción.
 4. Cadenas con comprobaciones fallidas, cadenas que no han conseguido superar las [comprobaciones](#comprobaciones)
 
-A continuación entre a **cadenas sin traducir** para continuar con la traducción de esas cadenas. Desde aquí podrás moverte entre las cadenas y ver mucha información.
+A continuación, entre a **cadenas sin traducir** para continuar con la traducción de esas cadenas. Desde aquí podrás moverte entre las cadenas y ver mucha información.
 
 Rellene la traducción y dele a sugerir para sugerir esa traducción y que un coordinador del idioma se encargue de aprobarlas.
 
