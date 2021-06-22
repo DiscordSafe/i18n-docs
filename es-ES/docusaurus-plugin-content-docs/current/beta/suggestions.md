@@ -11,11 +11,6 @@ de ellas, etc.
 
 ![Img](https://i.imgur.com/FdpTEz8.png)
 
-:::caution
-Estas caractecterísticas están BETA, contienen errores.
-Por favor, **repórtelos desde [aquí](https://d-safe.ithinki.io/b/bugs)**.
-:::
-
 Tenemos esta característica en la beta porque **contiene numerosos bugs y errores**, necesitamos que la prueben.
 
 ## Nuevos comandos {#news-commands}

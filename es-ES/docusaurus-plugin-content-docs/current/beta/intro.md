@@ -19,11 +19,6 @@ La beta pública es una versión del bot con funciones exclusivas en desarrollo 
 * El bot les dará un rol único y especial en el servidor público con el cuál desbloquearán canales desde donde charlar y participar directamente en el desarrollo de las nuevas características.
 * Para el acceso anticipado deben ser @「🧪」Testers, @「🎁」Safer I o @⤷ contribuidores.
 
-:::caution
-Estas caractecterísticas están BETA, contienen errores.
-Por favor, **repórtelos desde [aquí](https://d-safe.ithinki.io/b/bugs)**.
-:::
-
 ## Sistema de correos {#mails}
 Está incorporado un sistema de correos con ``d!mail``, desde el cuál os enviaremos el seguimiento de cambios que hacemos. ¡échales un ojo!
 También puede ver el último correo con ``d!changelog``. Podéis seguir el canal de #💌▹beta-pública en vuestro servidor con ``d!changelog follow``.
