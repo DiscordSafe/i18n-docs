@@ -29,10 +29,10 @@ Los modos de verificación son los siguientes:
 
 | 🔧 Modo           | 📣 Descripción                                                                  | 📑 Requiere                                       | 🔐 Nivel protección |
 | :---------------: | :------------------------------------------------------------------------------ | :------------------------------------------------ | :---- |
-| **Approval**      | El usuario tiene que ser aprobado por un administrador con `d.approve @Usuario` | Canal, rol no nerificado, rol usuario.            | **4** |
-| **Captcha**       | El usuario tiene que completar correctamente un captcha.                        | Canal, rol no nerificado, rol usuario.            | **3** |
+| **Approval**      | El usuario tiene que ser aprobado por un administrador con `d.approve @Usuario` | Canal, rol no verificado, rol usuario.            | **4** |
+| **Captcha**       | El usuario tiene que completar correctamente un captcha.                        | Canal, rol no verificado, rol usuario.            | **3** |
 | **Reaction**      | El usuario tiene que reaccionar a un mensaje para acceder al servidor.          | Canal, rol no verificado, rol usuario, mensaje.   | **2** |
-| **Verification**  | El usuario tiene que usar el comando `d.verifyme` para entrar.                  | Canal, rol no nerificado, rol usuario.            | **1** |
+| **Verification**  | El usuario tiene que usar el comando `d.verifyme` para entrar.                  | Canal, rol no verificado, rol usuario.            | **1** |
 
 <DiscordMessages>
   <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setmode captcha</DiscordMessage>
