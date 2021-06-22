@@ -27,14 +27,14 @@ Hemos hecho una guía para explicar mejor los pasos.
 ![Captcha guide](https://media.discordapp.net/attachments/585838930700533774/779859686362841098/D-Safe_Captcha_verification_guide.png)
 
 ### ¿Cómo puedo activar el anti-spam? {#anti-spam}
-* Activar: ``d.filter enable anti-spam``.
-* Desactivar: ``d.filters disable anti-spam``
+* Activar: ``d.filter anti-spam enable``.
+* Desactivar: ``d.filters anti-spam disable``
 
 *[Más información](config/filters.mdx#select-filter).*
 
 ### ¿Cómo puedo banear a un usuario? {#ban-user}
 * Si está en el servidor, usando `d.ban @Usuario`.
-* Si no está en el servidor `d.hackban ID`. *[¿qué es un ID?](guide/copy-ids.md)*
+* Si no está en `d.hackban ID`. *[¿qué es un ID?](guide/copy-ids.md)*
 
 ### ¿Cómo puedo configurar la verificación? {#how-verification}
 Vaya a [configuración de la verificación](config/verification.mdx) y siga los pasos.
@@ -49,7 +49,7 @@ No, aún no, empezaremos a trabajar en ello en breve.
 * Use el comando `d.logs` dentro del canal donde desea que el bot envíe los logs.
 
 ### ¿Cómo puedo hacer un backup de mi servidor de Discord? {#backup}
-Discord tiene plantillas del servidor que te permite generar una plantilla de los canales, configuración, permisos, etc y copiar ese enlace para copiar tu servidor en otro nuevo. Puedes acceder a esto desde ``Ajustes del servidor > Plantillas del servidor``.
+Discord tiene plantillas dque te permite generar una plantilla de los canales, configuración, permisos, etc y copiar ese enlace para copiar tu servidor en otro nuevo. Puedes acceder a esto desde ``Ajustes d> Plantillas del servidor``.
 
 ### No quiero que el bot banee a un usuario cuando uso `forceban`. {#whitelist-forceban}
 Si no quieres que un usuario sea baneado al usar el forceban, puedes ignorarlo usando el comando ``d.whitelist add UsuarioID``.
@@ -62,6 +62,33 @@ Vaya a [como copiar IDs](guide/copy-ids.md).
 
 ### ¿Cómo puedo reportar un usuario a Discord? {#how-to-report}
 Vaya a [como reportar a Discord](guide/report-discord.mdx) y siga los pasos.
+
+### ¿Qué significan las características del servidor? {#server-features}
+Son las características que tiene desbloqueadas un servidor.
+
+![Server badges](https://i.imgur.com/GKeBkww.png)
+
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828648029509910588.png?v=1"></img> <strong>Animated Icon</strong>, el icono es un GIF animado.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828650958141653012.png?v=1"></img> <strong>Banner</strong>, tiene un banner.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828650958124744755.png?v=1"></img> <strong>Commerce</strong>, tiene desbloqueado canales de tienda.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825059670099755039.png?v=1"></img> <strong>Community</strong>, tiene <a href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server">Comunidad</a> activado.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825060297072705657.png?v=1"></img> <strong>Discoverable</strong>, puede ser <a href="https://support.discord.com/hc/en-us/articles/360030843331-Enabling-Server-Discovery">descubierto</a> en el apartado de descubrir servidores.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828650958102724678.png?v=1"></img> <strong>Enabled Discoverable Before</strong>, podía ser descubierto antes.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828650958094467082.png?v=1"></img> <strong>Featurable</strong>, puede aparecer en la página oficial de Discord como destacado.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828650958078476319.png?v=1"></img> <strong>Invite Splash</strong>, tiene una imagen de fondo en el enlace de invitación.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825060295528939540.png?v=1"></img> <strong>Member Verification Gate Enabled</strong>, tiene activada la pantalla de verificación de miembros.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/854704564971765761.png?v=1"></img> <strong>Monetization Enabled</strong>, tiene activada la monetización.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828653369794363416.png?v=1"></img> <strong>More Emoji</strong>, tiene desbloqueadas todas las casillas de emojis.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825060295029686304.png?v=1"></img> <strong>More Stickers</strong>, puede añadir stickers.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825059665099751445.png?v=1"></img> <strong>News,</strong> tiene <a href="https://support.discord.com/hc/en-us/articles/360032008192-Announcement-Channels-">canales de anuncios</a>.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825060296678178886.png?v=1"></img> <strong>Partnered</strong>, es partner.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828650958136934430.png?v=1"></img> <strong>Preview Enabled</strong>, el servidor puede ser visto sin haber completado los pasos de la verificación.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828650958119632967.png?v=1"></img> <strong>Relay Enabled</strong>, el servidor es grande y tiene limitaciones para que vaya fluido para los usuarios.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/854704565382807572.png?v=1"></img> <strong>Ticketed Events Enabled</strong>, puede crear eventos de escenario con tickets.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825059670074327050.png?v=1"></img> <strong>Vanity URL</strong>, tiene una URL personalizada.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/825060298172006450.png?v=1"></img> <strong>Verified</strong>, está verificado.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828637111238393886.png?v=1"></img> <strong>VIP Regions</strong>, sus canales de voz soportan 384kbps.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/828652214906126366.png?v=1"></img> <strong>Welcome Screen Enabled</strong>, tiene habilitada la <a href="https://support.discord.com/hc/en-us/articles/360043913591-Community-Server-Welcome-Screen">pantalla de bienvenida</a>.
 
 ## Reportes bot {#faq-reports}
 ### ¿Cómo puedo reportar usando a D-Safe? {#report-dsafe}

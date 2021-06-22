@@ -9,8 +9,39 @@ import '../../../../../src/css/discord.css';
 ## Servidor de Discord {#discord-support}
 Tenemos a tu disposición un [servidor de soporte](https://discordsafe.com/discord) en Discord. Nuestro equipo estará pendiente para antenderte.
 
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import styles from '../../../../../src/pages/styles.module.css';
+
+<Link
+  className={clsx(
+    'button button-blurple',
+    styles.getStarted,
+  )}
+  to='https://discordsafe.com/discord'>
+  Unirse al servidor
+</Link>
+
 ## Email soporte {#email-support}
-También puede contactarnos a `support@discordsafe.com` si lo prefiere. no lo solemos revisar frecuentemente.
+También puede contactarnos a `support@discordsafe.com` si lo prefiere. No lo solemos revisar frecuentemente.
+
+<Link
+  className={clsx(
+    'button button-blurple',
+    styles.getStarted,
+  )}
+  to='mailto:support@discordsafe.com'>
+  Contactar por correo
+</Link>
 
 ## Consultas serias {#email-team}
 Si tiene otro tipo de consultar puede mandarle un correo al equipo en `team@discordsafe.com`.
+
+<Link
+  className={clsx(
+    'button button-blurple',
+    styles.getStarted,
+  )}
+  to='mailto:team@discordsafe.com'>
+  Contactar por correo
+</Link>
