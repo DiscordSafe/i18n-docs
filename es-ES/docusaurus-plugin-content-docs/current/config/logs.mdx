@@ -4,21 +4,69 @@ title: Logs
 sidebar_label: Logs
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
-import '../../../../../src/css/discord.css';
 
+Configure los canales de logs para registrar todo lo que ocurra en su servidor. Ayude a sus moderadores saber qué es lo que ha ocurrido usando unos poderosos logs.
 
-Los logs permiten a los administradores **ver todos los eventos que ocurren en el servidor** \(roles borrados, roles añadidos, entradas, salidas, mensajes borrados, etc\).
+## General {#general}
 
-* Para establecer un canal donde se manden los logs usa `d.logs` dentro del canal o `d.logs #Canal`.
-* Para desactivar los logs use `d.logs disable`.
+Los logs generales registran todo lo que ocurra, incluyendo lo que pueda ocurrir en:
+* Canales.
+* Servidor.
+* Mensajes.
+* Roles.
+* Eventos de escenario.
+
+Use `d.logs [#Canal/CanalID/disable]` para establecerlo o desactivarlo.
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.logs <discord-mention type="channel">logs</discord-mention></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El canal de logs ha sido establecido a <discord-mention type="channel">logs</discord-mention>.</discord-message>
+</DiscordMessages>
+
+<br/>
 
 <DiscordMessages>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-  <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" embed-title="Mensaje Eliminado" color="#eb5e54" thumbnail="https://cdn.discordapp.com/embed/avatars/4.png">jaja eres tonto
+  <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" embed-title="Mensaje eliminado" color="#eb5e54" thumbnail="https://cdn.discordapp.com/embed/avatars/4.png">jaja eres tonto
   <discord-embed-fields slot="fields">
-    <discord-embed-field field-title="Canal." inline="" inline-index="1"><discord-mention type="channel">general</discord-mention> - <code>504679535598501898</code></discord-embed-field>
+    <discord-embed-field field-title="Canal" inline="" inline-index="1"><discord-mention type="channel">general</discord-mention> - 504679535598501898</discord-embed-field>
     </discord-embed-fields>
     <span slot="footer">Autor: 318327338226155541 | Mensaje ID: 727651117785415741</span>
   </discord-embed>
   </discord-message>
 </DiscordMessages>
+
+## Moderación {#mod}
+
+Los logs de moderación registran todas las acciones de moderación que se hagan con el bot, incluyendo:
+* Kick.
+* Ban/Unban/Softban/Forceban.
+* Mute/Unmute.
+* Deafen/Undeafen.
+* Warn/Unwarn.
+* Etc.
+
+Use `d.logs mod [#Canal/CanalID/disable]` para establecerlo o desactivarlo.
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.logs mod <discord-mention type="channel">logs-mod</discord-mention></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El canal de logs de moderación ha sido establecido a <discord-mention type="channel">logs-mod</discord-mention>.</discord-message>
+</DiscordMessages>
+
+<br/>
+
+<DiscordMessages>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
+    <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" embed-title="Miembro muteado" color="#ffd78f" thumbnail="https://cdn.discordapp.com/embed/avatars/4.png">
+      <discord-embed-fields slot="fields">
+        <discord-embed-field field-title="Miembro" inline="1" inline-index="1"><discord-mention type="user">Usuario</discord-mention> (249561705066135552)</discord-embed-field>
+        <discord-embed-field field-title="Moderador" inline="2" inline-index="2"><discord-mention type="user">Carlos</discord-mention> (287574458963722240)</discord-embed-field>
+        <discord-embed-field field-title="Canal" inline="1" inline-index="1"><discord-mention type="channel">general</discord-mention> (750432097721778179)</discord-embed-field>
+        <discord-embed-field field-title="Tiempo" inline="2" inline-index="2"> 15m</discord-embed-field>
+        <discord-embed-field field-title="Razón" inline="3" inline-index="1"><code>Spam en general.</code></discord-embed-field>
+      </discord-embed-fields>
+    <span slot="footer">Autor: 318327338226155541 | Mensaje ID: 727651117785415741</span>
+    </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+## Boosts
+

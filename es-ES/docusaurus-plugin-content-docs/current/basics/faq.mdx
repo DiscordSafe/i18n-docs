@@ -4,7 +4,6 @@ title: Preguntas frecuentes
 sidebar_label: Preguntas frecuentes
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
-import '../../../../../src/css/discord.css';
 
 * * *
 
@@ -53,6 +52,30 @@ Discord tiene plantillas dque te permite generar una plantilla de los canales, c
 
 ### No quiero que el bot banee a un usuario cuando uso `forceban`. {#whitelist-forceban}
 Si no quieres que un usuario sea baneado al usar el forceban, puedes ignorarlo usando el comando ``d.whitelist add UsuarioID``.
+
+### ¿Qué significan las insignas de D-Safe? {#safebadges}
+Son una forma de indicar y destacar a usuarios y servidores especiales.
+
+#### Usuario {#safebadges-user}
+
+![User safe badges](https://i.imgur.com/JF74kBs.png)
+
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231197209755678.png?v=1"></img> <strong>Desarrollador</strong>, desarrollador del bot.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231197003972628.png?v=1"></img> <strong>Colaborador</strong>, ha colaborado de alguna manera con el bot o con la comunidad de D-Safe.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231197209755679.png?v=1"></img> <strong>Tester</strong>, ayuda probando las nuevas características antes que nadie y reportando bugs.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231197187735562.png?v=1"></img> <strong>Traductor</strong>, hace que D-Safe pueda ser usado por todos traduciéndolo.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231196919300147.png?v=1"></img> <strong>Partner</strong>, partner de <a href="https://discordsafe.com/discord">nuestra comunidad</a>.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231197003972629.png?v=1"></img> <strong>Premium</strong>, el usuario tiene <a href="http://docs.discordsafe.com/docs/premium/premium">D-Safe Premium</a>.
+
+#### Servidor {#safebadges-server}
+
+![Server safe badges](https://i.imgur.com/TPgAauf.png)
+
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231197180526602.png?v=1"></img> <strong>Oficial</strong>, el servidor es oficial.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231196920479745.png?v=1"></img> <strong>Beta</strong>, tiene a D-Safe Beta, la versión beta.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231196965830676.png?v=1"></img> <strong>Canary</strong>, tiene a D-Safe Canary, la versión alpha.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231196919300147.png?v=1"></img> <strong>Partner</strong>, partner de <a href="https://discordsafe.com/discord">nuestra comunidad</a>.
+* <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/857231197003972629.png?v=1"></img> <strong>Premium</strong>, el servidor tiene <a href="http://docs.discordsafe.com/docs/premium/premium">D-Safe Premium</a>.
 
 * * *
 
@@ -150,10 +173,10 @@ Podrás ver los motivos de por qué un usuario está en el forceban usando el co
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
       <discord-embed slot="embeds" embed-title="Información del baneo" color="#fe635a" thumbnail="https://i.imgur.com/0CeIqto.png">
         <discord-embed-fields slot="fields">
-        <discord-embed-field field-title="❯ Usuario" inline="" inline-index="0"><discord-mention highlight="" class="discord-mention discord-user-mention hydrated">UsuarioMalicioso</discord-mention> - <code>660479309416235029</code></discord-embed-field>
-        <discord-embed-field field-title="❯ Razón" inline="" inline-index="0">Raider.</discord-embed-field>
-        <discord-embed-field field-title="❯ Prueba(s)" inline="" inline-index="0">https://imgur.com/xyz</discord-embed-field>
-        <discord-embed-field field-title="❯ Tiempo" inline="" inline-index="0">Hasta el día 01-03-2021</discord-embed-field>
+        <discord-embed-field field-title="❯ Usuario" inline="" inline-index=""><discord-mention highlight="" className="discord-mention discord-user-mention hydrated">UsuarioMalicioso</discord-mention> - <code>660479309416235029</code></discord-embed-field>
+        <discord-embed-field field-title="❯ Razón" inline="" inline-index="">Raider.</discord-embed-field>
+        <discord-embed-field field-title="❯ Prueba(s)" inline="" inline-index="">https://imgur.com/xyz</discord-embed-field>
+        <discord-embed-field field-title="❯ Tiempo" inline="" inline-index="">Hasta el día 01-03-2021</discord-embed-field>
         </discord-embed-fields>
         <span slot="footer">Puede ignorar a este miembro del forceban usando d.whitelist.</span>
       </discord-embed>

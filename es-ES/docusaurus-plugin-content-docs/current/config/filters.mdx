@@ -4,7 +4,6 @@ title: Filtros
 sidebar_label: Filtros
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
-import '../../../../../src/css/discord.css';
 
 Los filtros permiten proteger tu servidor para **evitar que se envíe contenido malicioso** y que tus canales sean un lugar limpio.
 
@@ -35,7 +34,7 @@ import TabItem from '@theme/TabItem';
   **Para activarlo use:** ``d.filter invites enable``
 
   <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span class="red-text">https://discord.gg/UnanseAMiServidorPorfa:(</span></DiscordMessage>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span className="red-text">https://discord.gg/UnanseAMiServidorPorfa:(</span></DiscordMessage>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | No se permiten invitaciones a otros servidores de discord.</discord-message>
 </DiscordMessages>
   </TabItem>
@@ -50,8 +49,8 @@ import TabItem from '@theme/TabItem';
   **Para activarlo usa:** ``d.filter anti-iploggers enable``.
 
   <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span class="red-text">https://grabify.link/lolEstoEsUnIploggerLMAO</span></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span class="bold">[Anti Iplogger Básico]</span> No se permiten enviar enlaces iploggers o maliciosos.</discord-message>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span className="red-text">https://grabify.link/lolEstoEsUnIploggerLMAO</span></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span className="bold">[Anti Iplogger Básico]</span> No se permiten enviar enlaces iploggers o maliciosos.</discord-message>
 </DiscordMessages>
   </TabItem>
   <TabItem value="imgs">
@@ -66,7 +65,7 @@ import TabItem from '@theme/TabItem';
   <DiscordMessages>
   <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><discord-attachment slot="attachments" url="https://i.imgur.com/HJ3Oh4V.png" height="278" width="278" alt="dragonite"></discord-attachment>
   </DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span class="bold">[Filtro Imágenes Premium]</span> No se permite contenido NSFW fuera de canales NSFW.</discord-message>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span className="bold">[Filtro Imágenes Premium]</span> No se permite contenido NSFW fuera de canales NSFW.</discord-message>
 </DiscordMessages>
   </TabItem>
   <TabItem value="anti-spam">
@@ -98,10 +97,10 @@ Estamos trabajando para mejorar la sensibilidad del filtro anti-spam, puede que 
 </DiscordMessages>
 
  <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span class="red-text">
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span className="red-text">
     Mirá 👁 dejemos algo 🙄 claro ⚪️ mamavergas 🍆 Free Fire 🔥 es el mejor 😩 juego de la década 😡😡👊🏼 Free Fire 🔥 tiene unos gráficos 👅 que se asemejan a los de la ps4 🎮 y son mejores 👍🏼 que esa cochinada 🤢🤮 de Halo o Doom 😂😂👌🏼
     Como es posible 🙄 que tanto 😳 pendejo 😤esté en este grupo 😂😎 chupándosela a mierdacraft😡😡👊🏼</span></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span class="bold">[AntiSpam]</span> Su mensaje ha sido clasificado como spam.</discord-message>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span className="bold">[AntiSpam]</span> Su mensaje ha sido clasificado como spam.</discord-message>
 </DiscordMessages>
   </TabItem>
   <TabItem value="words">
@@ -111,7 +110,7 @@ Estamos trabajando para mejorar la sensibilidad del filtro anti-spam, puede que 
   Vaya a [palabras bloqueadas](#palabras-bloqueadas) para mucha más información.
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span class="red-text">hijo de puta</span></DiscordMessage>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span className="red-text">hijo de puta</span></DiscordMessage>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | Esa palabra está bloqueada.</discord-message>
 </DiscordMessages>
   </TabItem>
