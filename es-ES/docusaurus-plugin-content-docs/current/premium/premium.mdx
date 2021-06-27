@@ -5,6 +5,10 @@ sidebar_label: ¿Qué es D-Safe Premium?
 image: https://i.imgur.com/qI7peN6.png
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
+
 Mejora D-Safe con Premium y apoya el desarrollo y mantenimiento del bot para poder seguir traer actualizaciones mejor trabajadas y con las características que esperas.
 
 ## Beneficios {#features}
@@ -148,3 +152,118 @@ Mejora D-Safe con Premium y apoya el desarrollo y mantenimiento del bot para pod
 
 
 # Obtén D-Safe Premium [apoyándonos](support-us.mdx) {#support-us}
+
+## Configuración premium {#premium-config}
+
+### Filtros {#filters}
+
+<Tabs
+  defaultValue="anti-spam"
+  values={[
+    {label: 'Anti-Iploggers', value: 'anti-iploggers'},
+    {label: 'Imágenes', value: 'imgs'},
+  ]}>
+  <TabItem value="anti-iploggers">
+
+  Bloquea y borra todos los enlaces que sean iploggers destinados a obtener datos privados de los usuarios que entren.
+
+:::info
+  Para activar el filtro anti-iploggers avanzado siendo premium no hace falta otra configuración, solo activarlo detectará que es premium y activará el avanzado automáticamente.
+:::
+
+
+  **Para activarlo usa:** ``d.filter anti-iploggers enable``.
+
+  <DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span className="red-text">https://grabify.link/lolEstoEsUnIploggerLMAO</span></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span className="bold">[Anti Iplogger Avanzado]</span> No se permiten enviar enlaces iploggers o maliciosos.</discord-message>
+</DiscordMessages>
+  </TabItem>
+  <TabItem value="imgs">
+
+  Bloquea y borra todas las imágenes que contengan gore o sean NSFW enviadas fueras de canales NSFW. 
+  
+
+  **Para activarlo usa:** ``d.filter images enable``
+
+  <DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><discord-attachment slot="attachments" url="https://i.imgur.com/HJ3Oh4V.png" height="278" width="278" alt="dragonite"></discord-attachment>
+  </DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span className="bold">[Filtro Imágenes Premium]</span> No se permite contenido NSFW fuera de canales NSFW.</discord-message>
+</DiscordMessages>
+  </TabItem>
+</Tabs>
+
+### Sugerencias {#suggestions}
+#### Rol de encargado de sugerencias {#suggestions-manager-role}
+Establezca el rol encargado de las sugerencias con `d.suggestions setrole @Rol/RolID`.
+
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setrole <discord-mention type="role">Staff</discord-mention></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha establecido correctamente el rol que puede administrar las sugerencias. Ahora los miembros con este rol podrán aceptar, denegar y borrar sugerencias.</discord-message>
+</DiscordMessages>
+
+#### Canal de comandos de sugerencias {#suggestions-cmd-channel}
+Establezca el canal donde únicamente se podrá usar el comando `suggest` con `d.suggestions setcommandschannel #Canal/CanalID`.
+
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setcommandschannel <discord-mention type="channel">comandos</discord-mention></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha establecido correctamente el canal donde únicamente se puedan usar los comandos de sugerencias a <discord-mention type="channel">comandos</discord-mention>.</discord-message>
+</DiscordMessages>
+
+#### Tiempo de espera entre sugerencias {#time-between}
+Customize los minutos que debe pasar entre cada comando del `suggest` con `d.suggestions setcooldown Número(1-60) / disable`, el número son los minutos.
+
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setcooldown 5</DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha establecido correctamente el cooldown al enviar sugerencias. Ahora los miembros podrán enviar una sugerencia cada <b>5</b> minutos.</discord-message>
+</DiscordMessages>
+
+#### Emoji de las reacciones {#custom-emojis}
+Personalize los emojis de las reacciones de las sugerencias con `d.suggestions setemoji EmojiPositivo EmojiNegativo EmojiIndeciso(si está activado)`.
+
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setemoji <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/700003446971170937.png?v=1"></img> <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/700003446928965652.png?v=1"></img></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se han establecido correctamente los emojis personalizados.</discord-message>
+</DiscordMessages>
+
+#### Paleta customizada {#custom-palette}
+Customize la paleta de colores con `d.suggestions setpalette p1 #ColorHexadecimal`.
+
+Puede obtener el código de color hexadecimal de la siguiente [página](https://htmlcolorcodes.com/).
+
+Debe especificar el color de cada uno de los siguientes niveles, la `p` indica positivo, `n` indica negativo, del 1-3 cuanto más alto más votos hay.
+* p1, Establece el color positivo para pocos votos.
+* p2, Establece el color positivo para la mitad de votos.
+* p3, Establece el color positivo para muchos votos.
+* n1, Establece el color negativo para pocos votos.
+* n2, Establece el color negativo para la mitad de votos.
+* n3, Establece el color negativo para muchos votos.
+
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setpalette p1 #f2dea5</DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha establecido el <b>p1</b> a <code>#f2dea5</code>.</discord-message>
+</DiscordMessages>
+
+### Logs {#logs}
+
+#### Boosts {#boosts}
+Registre nuevas mejoras, mejoras acabadas, subidas de nivel del servidor, bajada de nivel del servidor y agradecimientos a los usuarios que mejoren el servidor.
+
+Use `d.logs boost [#Canal/CanalID/disable]` para establecerlo o desactivarlo.
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.logs boost <discord-mention type="channel">logs-boosts</discord-mention></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El canal de logs de boosts ha sido establecido a <discord-mention type="channel">logs-boosts</discord-mention>.</discord-message>
+</DiscordMessages>
+
+<br/>
+
+<DiscordMessages>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
+    <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" embed-title="¡Gracias por tu boost!" color="#ff73fa" thumbnail="https://cdn.discordapp.com/embed/avatars/4.png"><discord-mention type="user">Usuario</discord-mention> gracias por apoyar este servidor con tu boost.
+    </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+
+### Otros {#others}

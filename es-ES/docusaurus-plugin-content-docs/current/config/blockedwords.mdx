@@ -16,7 +16,7 @@ Bloquea palabras ofensivas que rompan las reglas del servidor.
 Para bloquear una o varias palabras use `d.blockword add [Palabra] <Palabra> <Palabra>`.
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.blockword add :v ;v >:v</DiscordMessage>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.blockword add puta</DiscordMessage>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Palabra/s bloqueada con éxito.</discord-message>
 </DiscordMessages>
 
@@ -24,24 +24,27 @@ Para bloquear una o varias palabras use `d.blockword add [Palabra] <Palabra> <Pa
 Para desbloquear una o varias palabras use `d.blockword remove [Palabra] <Palabra> <Palabra>`.
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.blockword remove :v ;v >:v</DiscordMessage>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.blockword remove puta</DiscordMessage>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Palabra/s desbloqueada con éxito.</discord-message>
 </DiscordMessages>
 
 ## Packs de palabras bloqueadas {#blockedwords-packs}
 Ahora puede bloquear un pack de palabras seleccionadas por nosotros para facilitarle la moderación.
 
-* Para bloquear las palabras de un pack use: `d.blockword add pack <0/1/2>`
-* Para desbloquear las palabras de un pack use: `d.blockword remove pack <0/1/2>`
+* Para bloquear las palabras de un pack use: `d.blockword add pack [Nombredel pack]`
+* Para desbloquear las palabras de un pack use: `d.blockword remove pack [Nombre del pack]`
 
-| 📦 Pack | 📣 Descripción |
-| :--- | :--- |
-| **0** | Palabras recomendadas, ligeramente ofensivas. | 
-| **1** | Palabras ofensivas e insultos. | 
-| **2** | Palabras inapropiadas y explícitas. | 
+| 📦 Pack   | 📣 Descripción                    |
+| :-------- | :-------------------------------- |
+| `en`      | Palabras ofensivas en __Inglés__. |
+| `es`      | Palabras ofensivas en __Español__.|
+| `lgbt`    | Insultos a la comunidad lgbt.     |
+| `nsfw`    | Palabras ofensivas explícitas.    |
+| `racists` | Insultos racistas.                |
+| `pacman`  | Pacmans (`:v`).                     |
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.blockword add pack 0</DiscordMessage>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.blockword add pack es</DiscordMessage>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
   <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Se ha bloqueado la lista de palabras recomendadas con éxito.
   </discord-message>
@@ -50,7 +53,16 @@ Ahora puede bloquear un pack de palabras seleccionadas por nosotros para facilit
 ## Ver palabras bloqueadas {#blockword-list}
 Podrá ver la lista de palabras bloqueadas usando `d.blockword list`.
 
-Este comando le envía un archivo **[Markdown](https://es.wikipedia.org/wiki/Markdown)** donde podrá ver las palabras.
+## Ignorar canales o roles. {#ignore}
+Para ignorar un canal o rol use: ``d.blockword ignore [#Canal/@Rol].``
+
+Por ejemplo:
+
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.blockword ignore <discord-mention type="channel">general</discord-mention></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Se ha ignorado correctamente el canal <discord-mention type="channel">general</discord-mention>.</discord-message>
+</DiscordMessages>
+
 
 ## Resetear las palabras bloqueadas {#blockword-reset}
 Una forma sencilla de eliminar todas las palabras bloqueadas es usando `d.blockword reset`.

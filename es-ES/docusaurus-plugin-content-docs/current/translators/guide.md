@@ -6,10 +6,6 @@ sidebar_label: Guía de traducción
 
 ![Img](https://i.imgur.com/NYsAUU5.png)
 
-## Páginas dentro de la categoría {#menu}
-### [Guía de traducción](translators/guide.md). {#this}
-### [Pautas de traducción](translators/guidelines.md). {#pautas}
-
 # Guía de traducción {#guide}
 
 Bienvenid@ a la guía de traducción para traductores, aquí estará explicada la plataforma de traducción que usamos, cómo traducir y cosas a tener en cuenta.

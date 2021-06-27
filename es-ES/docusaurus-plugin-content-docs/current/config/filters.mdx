@@ -7,13 +7,7 @@ import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-componen
 
 Los filtros permiten proteger tu servidor para **evitar que se envíe contenido malicioso** y que tus canales sean un lugar limpio.
 
-### Activar {#enable}
-Para activarlos siga la guía dando click abajo, al filtro que quiera activar.
-
-### Desactivar {#disable}
-Para desactivar un filtro use: ``d.filters disable <filtro>``
-
-## Seleccione el filtro {#select-filter}
+## Activar filtros {#enable}
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -40,8 +34,10 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="anti-iploggers">
 
-  **Obtén el filtro más avanzado que bloquea +800 iploggers siendo [premium](premium/premium.mdx).**
-  **(El normal sigue siendo gratis).**
+:::info
+Obtén el filtro más avanzado que bloquea +800 iploggers siendo [premium](premium/premium.mdx). (el normal lo puede seguir usando sin ser premium).
+Vaya a [configuración premium](premium/premium.mdx#filters) para una guía sobre cómo configurarlo.
+:::
 
   Bloquea y borra todos los enlaces que sean iploggers destinados a obtener datos privados de los usuarios que entren.
 
@@ -53,28 +49,20 @@ import TabItem from '@theme/TabItem';
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span className="bold">[Anti Iplogger Básico]</span> No se permiten enviar enlaces iploggers o maliciosos.</discord-message>
 </DiscordMessages>
   </TabItem>
-  <TabItem value="imgs">
+  <TabItem value="imgs"> 
 
-  **Obtén este filtro siendo [premium](premium/premium.mdx).**
 
-  Bloquea y borra todas las im&#xE1;genes que contengan gore o sean NSFW enviadas fueras de canales NSFW. 
-  
+:::info
+Obtenga el filtro de imágenes NSFW que bloquea y borra todas las imágenes que contengan gore o sean NSFW enviadas fueras de canales NSFW siendo [premium](premium/premium.mdx).
+Vaya a [configuración premium](premium/premium.mdx#filters) para una guía sobre cómo configurarlo.
+:::
 
-  **Para activarlo usa:** ``d.filter images enable``
-
-  <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><discord-attachment slot="attachments" url="https://i.imgur.com/HJ3Oh4V.png" height="278" width="278" alt="dragonite"></discord-attachment>
-  </DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585319469149.png?v=1"></img> | <span className="bold">[Filtro Imágenes Premium]</span> No se permite contenido NSFW fuera de canales NSFW.</discord-message>
-</DiscordMessages>
   </TabItem>
   <TabItem value="anti-spam">
   Analiza los mensajes y si detecta que es spam lo borrará.
   
-
   **Para activarlo usa:** ``d.filter anti-spam enable``
   
-
   ## Niveles:
 
 :::caution Aviso
@@ -95,7 +83,7 @@ Estamos trabajando para mejorar la sensibilidad del filtro anti-spam, puede que 
   <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.filter anti-spam enable 3</DiscordMessage>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Se ha establecido correctamente el nivel 3.</discord-message>
 </DiscordMessages>
-
+<br/>
  <DiscordMessages>
   <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png"><span className="red-text">
     Mirá 👁 dejemos algo 🙄 claro ⚪️ mamavergas 🍆 Free Fire 🔥 es el mejor 😩 juego de la década 😡😡👊🏼 Free Fire 🔥 tiene unos gráficos 👅 que se asemejan a los de la ps4 🎮 y son mejores 👍🏼 que esa cochinada 🤢🤮 de Halo o Doom 😂😂👌🏼
@@ -115,3 +103,24 @@ Estamos trabajando para mejorar la sensibilidad del filtro anti-spam, puede que 
 </DiscordMessages>
   </TabItem>
 </Tabs>
+
+## Desactivar {#disable}
+Para desactivar un filtro use: ``d.filter [Filtro] disable``.
+
+Por ejemplo:
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.filter anti-spam disable</DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Se ha desactivado correctamente el filtro anti-spam.</discord-message>
+</DiscordMessages>
+
+
+## Ignorar roles o canales {#ignore}
+Para ignorar un canal o rol en un filtro use: ``d.filter [Filtro] ignore [#Canal/@Rol].``
+
+Por ejemplo:
+
+<DiscordMessages>
+  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.filter anti-spam ignore <discord-mention type="channel">general</discord-mention></DiscordMessage>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Se ha ignorado correctamente el canal <discord-mention type="channel">general</discord-mention>.</discord-message>
+</DiscordMessages>
+
