@@ -28,7 +28,7 @@ Si has seguido el paso anterior, ahora tan solo tienes que:
 
 ![Img](/img/ids-1.png)
 
-## ¡Eso es todo! En solo 2 pasos. 
+## ¡Eso es todo! En solo 2 pasos. {#done}
 
 # Dudas {#dudas}
 
