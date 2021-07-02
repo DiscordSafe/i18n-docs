@@ -1,0 +1,90 @@
+---
+id: changelog
+title: Changelog 5.0 
+sidebar_label: Changelog 5.0
+image: https://i.imgur.com/eEJXa2u.png
+---
+
+Bienvenidos a la versión **`5.0`**, debido a los grandes cambios introducidos ahora se llamará `5.0` y no `4.3`.
+Siguiendo la temática de las anteriores grandes actualizaciones esta mejora radicalmente la moderación, uno de los grandes pilares de esta actualización.
+
+D-Safe Beta se ha movido a un nuevo bot como fue anunciado anteriormente.
+
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import styles from '../../../../../src/pages/styles.module.css';
+
+<Link
+  className={clsx(
+    'button button-blurple',
+    styles.getStarted,
+  )}
+  to='https://discord.com/oauth2/authorize?client_id=859067982653947935&permissions=2100686078&scope=applications.commands%20bot'>
+  Invitar al bot nuevo
+</Link>
+
+![cover](https://i.imgur.com/eEJXa2u.png)
+
+![gif](https://i.imgur.com/A0akttH.gif)
+
+## Slash Commands. :ribbon: 
+Se introduce el soporte inicial para Slash Commands con pocos comandos básicos para ir añadiendo más y mejores en un futuro.
+* `/ping`.
+* `/avatar`.
+* `/topbots`.
+
+## Cosas nuevas. :sparkles:
+- **¡Casos de moderación!**
+Finalmente algo revolucionario para el módulo de moderación, ahora cada acción de moderación se guardará como caso (con un número único) con información del usuario sancionado, moderador, acción, razón, tiempo, etc.
+
+  * `cases`: Puedes ver los casos ordenados por recientes.
+  * `case [Número del caso]`: puedes ver la información de un caso.
+  * `reason [Número del caso] [Nueva razón]`: puedes añadir o editar la razón de un caso.
+  
+  :warning: Se han migrado internamente todos los warns como casos, como no se guardaba la fecha en los warns aparecerá una incorrecta.
+
+- **Estadísticas de moderación.**
+Con el nuevo comando `modstats` puedes ver gráficos de los casos, agregaremos más en el futuro, por ahora:
+  * Gráfico con los tipos de casos.
+  * Gráfico con moderadores más activos, mostrando el porcentaje de cada uno.
+
+- **Logs de casos.**
+Además, ahora en los **logs de moderación** (`logs mod`) se envían los registros con los cambios en los casos, ahí podrás ver los números de los casos.
+
+- **Ajustes para el comportamiento de la moderación.**
+Poderosos comandos de moderación requieren una forma de configurarlos, ahora puedes configurar los siguiente comportamiento usando el nuevo comando `setup`:
+  * Notificar por md a los usuarios por defecto, puede ser sobreescrito con la opción `--md` al acabar el comando.
+  * Eliminar automáticamente los mensajes por defecto, puede ser sobreescrito con la opción `--del` al acabar el comando.
+
+- **Nueva documentación**
+Hemos habilitado un enlace donde podéis ver la nueva documentación preliminar con las cosas nuevas [aquí](https://deploy-preview-17--doc-ds.netlify.app/). *Está en desarrollo y puede estar incompleta, no debe ser usada como soporte.*
+  * Documentación multilenguaje en desarrollo.
+  * [Nueva categoría de premium donde estará toda la guía de configuración premium](https://deploy-preview-17--doc-ds.netlify.app/docs/premium/premium).
+  * Rediseño de los temas claro y oscuros para usar los nuevos colores de Discord.
+  * Guía de configuración separada por páginas, cada módulo tiene su propia página bajo la categoría de "Configuración".
+  * FAQ actualizado y categoría de solución de problemas.
+  * Categoría de comunidad con todo lo relacionado con la comunidad.
+
+* **Nuevo comando `setup`**, una fantasía, configura automáticamente la verificación, filtros y moderación usando botones, PROBADLO.
+* **¡Nuevas insignias de D-Safe!**, se mostrarán en el `info` y `server`.
+* Nuevos comandos de moderación `deafen` y `undeafen`, para ensordecer/desensordecer a un miembro.
+* Nuevo comando `emoji` (con alias `jumbo`), muestra el emoji agrandado.
+* Nuevo pack de palabras bloqueadas `pacman`, bloquea todos los pacmans! `blockword add pack pacman`.
+* Logs de eventos de canales escenario, creación, eliminación y actualización de eventos en los canales escenario.
+
+## Mejoras. :pushpin:
+- **Mejoras en `invite` y `server`:**
+  * Nivel de NSFW del servidor.
+  * Todas las imágenes del servidor adjuntadas.
+  * Cantidades más aproximadas en miembros, etc.
+  * Títulos de las características del servidor.
+  * Nuevas características de servidores.
+  * Quitada información de la región ya que ahora es por canal no por servidor.
+* Se han optimizado y mejorado los comandos de `filter`, `setlang` y `settings` ahora muestran más información con paginación.
+* Enlaces en el comando `help` y `botinfo` pasados a botones.
+* Mejorado analizador de usuarios y razones en los comandos de moderación.
+* Se ha quitado el divisor extraño (` | `) entre emojis y el texto en los mensajes.
+
+## Arreglo de bugs. :bug:
+* Arreglados correos duplicados que rompían el comando `mail`.
+* Quitados antiguos emojis que quedaron por ahí.
