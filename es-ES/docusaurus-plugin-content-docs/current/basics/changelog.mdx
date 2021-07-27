@@ -5,10 +5,8 @@ sidebar_label: Changelog 5.0
 image: https://i.imgur.com/eEJXa2u.png
 ---
 
-Bienvenidos a la versión **`5.0`**, debido a los grandes cambios introducidos ahora se llamará `5.0` y no `4.3`.
-Siguiendo la temática de las anteriores grandes actualizaciones esta mejora radicalmente la moderación, uno de los grandes pilares de esta actualización.
-
-D-Safe Beta se ha movido a un nuevo bot como fue anunciado anteriormente.
+Bienvenidos a la versión **`5.0`**, esta versión se enfoca en mejorar radicalmente la moderación con D-Safe.
+La versión está actualmente en desarrollo y puedes probarla y dejar tus sugerencias y opiniones gracias a la beta abierta en la que puedes participar invitando al bot beta.
 
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
@@ -20,20 +18,22 @@ import styles from '../../../../../src/pages/styles.module.css';
     styles.getStarted,
   )}
   to='https://discord.com/oauth2/authorize?client_id=859067982653947935&permissions=2100686078&scope=applications.commands%20bot'>
-  Invitar al bot nuevo
+  Invita a D-Safe Beta
 </Link>
 
 ![cover](https://i.imgur.com/eEJXa2u.png)
 
 ![gif](https://i.imgur.com/A0akttH.gif)
 
-## Slash Commands. :ribbon: 
+## Slash Commands :ribbon: 
 Se introduce el soporte inicial para Slash Commands con pocos comandos básicos para ir añadiendo más y mejores en un futuro.
 * `/ping`.
 * `/avatar`.
 * `/topbots`.
 
-## Cosas nuevas. :sparkles:
+## Cosas nuevas :sparkles:
+Cosas completamentes nuevas recién sacadas del horno.
+
 - **¡Casos de moderación!**
 Finalmente algo revolucionario para el módulo de moderación, ahora cada acción de moderación se guardará como caso (con un número único) con información del usuario sancionado, moderador, acción, razón, tiempo, etc.
 
@@ -65,14 +65,55 @@ Hemos habilitado un enlace donde podéis ver la nueva documentación preliminar 
   * FAQ actualizado y categoría de solución de problemas.
   * Categoría de comunidad con todo lo relacionado con la comunidad.
 
-* **Nuevo comando `setup`**, una fantasía, configura automáticamente la verificación, filtros y moderación usando botones, PROBADLO.
-* **¡Nuevas insignias de D-Safe!**, se mostrarán en el `info` y `server`.
-* Nuevos comandos de moderación `deafen` y `undeafen`, para ensordecer/desensordecer a un miembro.
-* Nuevo comando `emoji` (con alias `jumbo`), muestra el emoji agrandado.
-* Nuevo pack de palabras bloqueadas `pacman`, bloquea todos los pacmans! `blockword add pack pacman`.
-* Logs de eventos de canales escenario, creación, eliminación y actualización de eventos en los canales escenario.
+- **Nuevos comandos**
+Una gran tonelada de nuevos útiles comandos.
+  * `setup`, una fantasía, configura automáticamente la verificación, filtros y moderación usando botones y selectores, PROBADLO.
+  * `deafen` y `undeafen`, para ensordecer/desensordecer a un miembro.
+  * `emoji` (con alias `jumbo`), muestra el emoji agrandado.
+  * `inviteinfo`, muestra la información de una invitación, ejemplo: `inviteinfo discord-testers`.
+  * `roleinfo`, muestra la información de un rol.
+  * `suggestions editcomment [ID Sugerencia] [Nuevo comentario]`, edita los comentarios del staff de las sugerencias ya aprobadas/denegadas.
+  * `logs help/list/mod/boost`, nuevos subcomandos en `logs`.
+  * `topbots`, muestra el top de bots de Discord.
+  * `softban`, banea y desbanea inmediatamente para borrar todos sus mensajes.
+  * `delrole`, elimina el rol mencionado si el usuario tiene permisos.
 
-## Mejoras. :pushpin:
+- **Nuevos tipos de logs**
+  * `mod`, envía la información __(sancionado, moderador, razón, etc) de los comandos de moderación usados__.
+  * `boost`, logs de boost (agradecimiento), unboost, subida y bajada de nivel de boost. __Solo para D-Safe Premium.__
+
+- **¡Nuevos packs de palabras bloqueadas!** (`blockword add pack`)
+  * `en`: Palabras ofensivas en Inglés.
+  * `es`: Palabras ofensivas en Español
+  * `lgbt`: Insultos a la comunidad lgbt.
+  * `nsfw`: Palabras ofensivas explícitas.
+  * `racists`: Insultos racistas.
+
+- **Nuevos logs**
+  * __Logs de comandos de moderación__.
+  * __Logs de canales__: cambio del tema, cambio nsfw, cambio del nombre, cambio del tipo, cambio del cooldown.
+  * __Logs de miembros__: cambio del apodo de miembro, cambio en los roles de miembros, cambio del nombre.
+  * __Logs del servidor__: cambio de nombre, cambio de afk, cambio descripción, cambio características, cambio vanity URL.
+  * __Logs de mensajes__: nuevo mensaje anclado.
+  * __Logs de roles__: cambio de los permisos del rol.
+  * __Logs de voz__: mute, unmute, ensordeció, desensordeció, empezó stream, terminó stream, entrada, salida o cambio en los canales de voz.
+  * Información del moderador al banear/desbanear.
+  * Añadidas insignias e información de bot y mejorada fecha al unirse o salir miembros.
+
+- **¡Nuevas insignias de D-Safe!**, se mostrarán en el `info` y `server`.
+- **+15 opciones en el `clear`** Algunas son `clear match/not/startsWith/endsWith/invites/links/embeds/before/after/...`, salen todas con `help clear`.
+- **HEMOS MATADO A LAS REACCIONES, AHORA TODOS SON BOTONES.** *(ya no hay que esperar 4 segundos a que el bot pueda añadir cada reacción para moverte por las opciones de un comando)*
+- **Nuevo formato de fechas y tiempo**, ahora en las fechas y tiempos que se muestran en el bot se usa el nuevo formato de fechas en mensajes de Discord, puedes verlo por ejemplo en el `info`.
+- **Logs de hilos**, los hilos son una nueva característica de Discord aún no anunciada que permite crear diferentes canales a partir de un mensajes para dividir los temas que pueden ocurrir en un canal, actualmente los puedes probar creando un servidor con @D-Safe Beta#3201, que no tenga más de __5 miembros en total__ y activándolo desde ajustes del servidor (en pc).
+- **Nuevos menús de selección (dropdowns) en el comando `setup`**, configurar la verificación nunca ha sido más fácil, se usan al configurar el canal, rol de usuario, rol de no verificado y el resto de configuraciones opcionales.
+- Nuevo pack de palabras bloqueadas `pacman`, bloquea todos los pacmans! `blockword add pack pacman`.
+- Logs de eventos de canales escenario, creación, eliminación y actualización de eventos en los canales escenario.
+- ¡Opción de ignorar canales y roles en los filtros!
+- Nueva opción `ban --save`, guarda los mensajes al hacer ban.
+
+## Mejoras :pushpin:
+Comandos o cosas mejorados en todos los aspectos del bot.
+
 - **Mejoras en `invite` y `server`:**
   * Nivel de NSFW del servidor.
   * Todas las imágenes del servidor adjuntadas.
@@ -80,11 +121,76 @@ Hemos habilitado un enlace donde podéis ver la nueva documentación preliminar 
   * Títulos de las características del servidor.
   * Nuevas características de servidores.
   * Quitada información de la región ya que ahora es por canal no por servidor.
+
+- **Nuevas opciones en las sugerencias:**
+  * `suggestions setapproved disable`, para deshabilitar el canal de sugerencias aprobadas.
+  * `suggestions setdenied disable`, para deshabilitar el canal de sugerencias denegadas.
+  * `suggestions setcommandschannel disable`, para deshabilitar el canal de comandos de las sugerencias.
+
 * Se han optimizado y mejorado los comandos de `filter`, `setlang` y `settings` ahora muestran más información con paginación.
 * Enlaces en el comando `help` y `botinfo` pasados a botones.
 * Mejorado analizador de usuarios y razones en los comandos de moderación.
 * Se ha quitado el divisor extraño (` | `) entre emojis y el texto en los mensajes.
+* Ahora `filter help` muestra más información con paginación.
+* Se han reemplazado las confirmaciones con "yes" por reacciones.
+* Comando `info` totalmente renovado, más información, nuevo alias whois.
+* Función de respuesta de Discord! Ahora para las respuestas normales el bot responderá con la función de responder de Discord.
+* Agregado más tiempo de espera para el `suggestions list`.
+* El `verification setage` ya funciona sin requerir que configures la verificación podrás establecer la edad mínima requerida de las cuentas de los nuevos usuarios sin tener que configurar una verificación.
+* Al responder a un comando con la función de respuesta de Discord ya no menciona, no es necesario.
+* __Ahora el `ban`, `kick` y `unban` aceptan como argumento nombres de usuarios__, **esto puede no ser definitivo, evite ahora usar `d!ban Antonio` porque acabará baneando al pobre Antonio.**
+* Todos los comandos de moderación __aceptan menciones e IDs__.
+* El `mute` ahora puede aceptar el __formato de fecha junto a la cantidad__.
+* Las acciones de moderación indican __información de la acción en el audit log__ (moderador, tiempo, etc).
+* Potenciado el rendimiento el tiempo de respuesta en los comandos.
+* Opción de `--md` después del comando para indicar que le notifique por md al usuario, por defecto no lo hará.
+* La cantidad de tiempo, formato de tiempo y razón en el `mute` ahora son opcionales, solo es requerido el usuario.
+* Mails del `mails` ordenados bien por fecha, un alivio para tus ojos.
+* El comando `server` ahora diferencia webhooks de canales seguidos.
+* Actualizados ejemplos de `blockword` en `filters help`.
+* Agregada separación por puntos en los números del `help` y `botinfo`.
+* `settings` ahora muestra __más información__ en un embed con paginación.
+* ¡Nuevos emojis diseñados por nosotros!
+* Nuevos colores actualizados con los nuevos de Discord.
+* Ahora un usuario podrá tener varios premiums en distintos servidores.
+* Selección de servidor al hacer `premium redeem` si tiene varios premiums.
+* Explicaciones y embeds mejorados sobre premium.
 
-## Arreglo de bugs. :bug:
+## Arreglo de bugs :bug:
+Un abrazo enorme a todos los que probaron y reportaron estos bugs.
+
 * Arreglados correos duplicados que rompían el comando `mail`.
 * Quitados antiguos emojis que quedaron por ahí.
+* El `server` ya funciona en servidores con Stage Channels, se muestran también en la lista de canales del server.
+* Arreglados varios bugs con las respuestas del `server` sin mostrarse o sin terminar de cargar.
+* Lista de comandos en `commands` ordenada alfabeticamente.
+* Mejorada ortografía del registro de cambios y mail.
+* Arreglados un par de bugs al mostrar fechas en comandos.
+* Arreglado un bug donde se veía mal los enlaces en la lista de sugerencias.
+* Arreglado bug que no permitía deshabilitar las sugerencias.
+* Arreglado bugs de filtros no funcionando en la beta.
+* __Los emojis de :safeyes: :nopesafe: han sido reemplazados por otros mejores__, para parecerse más al diseño de Discord.
+* __Mejora de la apariencia__ de los mensaje de errores y respuestas.
+* Arreglado error que hacía `ban, kick o warn` a todos los usuarios.
+* Arreglado un bug en el `ban` cuando el miembro no estaba en el servidor.
+* ¡Arreglado bug de la verificación por reacción!
+* Arreglado bugs de filtros.
+* Arreglado `setlang`.
+* Actualizadas insignias en `userinfo` y `serverinfo`.
+* Mejorado módulo de traducciones, ahora las traducciones son open source, https://github.com/DiscordSafe/i18n.
+* El `role` no respondía.
+* El `modstats` no respondía.
+* El `info` no respondía si tenías muchos roles, *superaba el límite de caracteres del mensaje*.
+* Los logs de cambios de miembros y cambios en canales de voz no funcionaban correctamente.
+* El mute no funcionaba al indicar el usuario por ID.
+* El captcha no enviaba la imagen.
+* El `setup` no respondía si no tenías muchos canales/roles que podía usar para mostrarte en la selección.
+* El `commands` no mandaba la lista de comandos al canal si no podía mandarle por md al usuario.
+* El `suggest` no respondía con el mensaje de "sugerencia enviada".
+* Los comandos de moderación (`ban`, `kick`, `mute`, etc) no baneaban ni respondían al no encontrar a los usuarios usando un nombre.
+* El `mute` no funcionaba correctamente cuando no tenías un rol Muted creado y tenía que crearlo.
+* El `unban` no enviaba (cuando podía) al usuario la notificación cuando es desbaneado.
+* Los logs por cambios en roles no funcionaban en algunos casos.
+* El filtro anti-spam no ignoraba correctamente a los roles ignorados.
+* Las palabras bloqueadas no ignoraban correctamente a los roles ignorados.
+* El `setup` no respondía cuando tenías canales con descripciones muy largas sin espacios.
