@@ -11,7 +11,7 @@ sidebar_label: Pautas de traducción
 
 * NO debe traducir/cambiar los nombres de los comandos.
 
-* NO debe traducir argumentos de comandos. Ejemplo: no debe traducir ejemplo el add ded.blockword add pero si debe traducir el contenido dentro de ``<>`` que indica el ejemplo ``d.blockword add <Palabra>``
+* NO debe traducir argumentos de comandos. Ejemplo: no debe traducir ejemplo el add d.blockword add pero si debe traducir el contenido dentro de ``<>`` que indica el ejemplo ``d.blockword add <Palabra>``
 
 * DEBE traducir palabras que serán reemplazadas por un usuario.
 
