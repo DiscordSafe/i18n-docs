@@ -26,16 +26,12 @@ Si has seguido el paso anterior, ahora tan solo tienes que:
 - **En PC:** Click derecho al usuario, mensaje, canal, rol, etc.
 - **En movil/celular:** Mantén pulsado, perfil del usuario u opciones.
 
-![Img](/img/ids-1.png)
-
 ## ¡Eso es todo! En solo 2 pasos. {#done}
 
 # Dudas {#dudas}
 
 ## ¿Y cómo copio la ID de un grupo o un MD? {#copy-group-id}
 Pues podrás hacerlo desde el navegador o usando click derecho en PC.
-
-![Img](/img/ids-2.png) 
 
 ![Img](/img/ids-4.png)
 
