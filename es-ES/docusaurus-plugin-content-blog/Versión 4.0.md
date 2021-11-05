@@ -29,7 +29,7 @@ Ahora sí, después de unas bonitas declaraciones, los dejo con las novedades. �
 * * *
 
 # Novedades
-**Estas solo son las principales, la lista de novedades puedes verla en el [registro de cambios](https://blog.discordsafe.com/Noticias/Registro-de-cambios/registro-de-cambios).**
+**Estas solo son las principales, la lista de novedades puedes verla en el [registro de cambios](changelog-v4.0).**
 
 * Lenguaje.
 * Verificación.
@@ -37,7 +37,7 @@ Ahora sí, después de unas bonitas declaraciones, los dejo con las novedades. �
 * Discord Safe Premium.
 * Rewrite, todo el código ha sido rescrito.
 * Limpieza del forceban.
-* [Documentación](https://docs.discordsafe.com).
+* [Documentación](https://docs.discordsafe.com/).
 * Nueva página web y dominio.
 * Desbaneo de los usuarios quitados del forceban.
 * Usuarios añadidos al forceban durante solo un tiempo y con pruebas.
@@ -45,7 +45,7 @@ Ahora sí, después de unas bonitas declaraciones, los dejo con las novedades. �
 * Arreglo de bugs.
 * Mejor sistema de reportes.
 * Sistema de partners en nuestro servidor.
-* [Blog](https.//blog.discordsafe.com) donde diremos noticias.
+* [Blog](https://blog.discordsafe.com/) donde diremos noticias.
 * Shards.
 * Forceban Automático.
 * Filtros.
@@ -100,10 +100,10 @@ Así es, hemos decidido empezar de 0 en el forceban, no te extrañes si dice "5 
 Como estás leyendo, ahora tenemos una web oficial que funciona bien con un diseño moderno y que se adapta a todos los dispositivos.
 
 ### ¿Y qué hay nuevo?
-* [Web](https://discordsafe.com)
-* [Documentación](https://docs.discordsafe.com)
-* [Blog](https://blog.discordsafe.com)
-* [Estado](https.//status.discordsafe.com)
+* [Web](https://discordsafe.com/)
+* [Documentación](https://docs.discordsafe.com/)
+* [Blog](https://blog.discordsafe.com/)
+* [Estado](https://status.discordsafe.com/)
 
 ## Más comandos de moderación.
 ¡Por fin! Ya podéis moderar correctamente como es debido, los comandos de moderación ahora son:
