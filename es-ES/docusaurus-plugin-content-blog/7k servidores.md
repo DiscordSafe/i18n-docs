@@ -1,5 +1,6 @@
 ---
 title: 7K de servidores
+slug: 7k-servers
 date: 2020-11-27 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe

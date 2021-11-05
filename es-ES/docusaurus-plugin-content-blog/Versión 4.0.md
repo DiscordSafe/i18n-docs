@@ -1,5 +1,6 @@
 ---
 title: Lanzamos la versión 4.0
+slug: v4.0
 date: 2020-04-25 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe

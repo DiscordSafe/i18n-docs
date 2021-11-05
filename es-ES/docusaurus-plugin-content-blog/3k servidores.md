@@ -1,5 +1,6 @@
 ---
 title: 3K de servidores
+slug: 3k-servers
 date: 2020-06-23 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe

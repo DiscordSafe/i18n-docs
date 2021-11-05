@@ -1,5 +1,6 @@
 ---
 title: Versión 4.2
+slug: v4.2
 date: 2020-09-20 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe

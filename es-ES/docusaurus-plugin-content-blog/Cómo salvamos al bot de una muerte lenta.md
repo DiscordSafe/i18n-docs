@@ -1,5 +1,6 @@
 ---
-title: Cómo recuperamos al bot de una muerte lenta
+title: Como recuperamos al bot de una muerte lenta
+slug: como-recuperamos-al-bot
 date: 2020-11-27 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
@@ -65,13 +66,13 @@ Esto es debido a que [discord.js](https://discord.js.org), la librería donde es
 
 Decidimos que lo mejor sería cambiar de [librería](https://discord.com/developers/docs/topics/community-resources), pero queríamos que fuera lo menos complicado posible, no queríamos aprender otro lenguaje, nos plantamos usar la alternativa, **[Eris](https://abal.moe/Eris/)**, en esta librería están gran parte de los bots con más servidores de Discord, [fuente](https://gist.github.com/advaith1/451dcbca2d7c3503d4f48d63eb918cb0).
 
-<img src="https://i.imgur.com/jCj986n.png" alt="Top Bots" style="zoom: 67%;" />
+![img](https://i.imgur.com/jCj986n.png)
 
 No queríamos reescribir de nuevo toda la estructura del código, por ello decidimos pasar a [discord.js-light](https://github.com/timotejroiko/discord.js-light). Esta librería ofrece y mantiene las mismas características que discord.js pero te permite elegir qué cosas que necesitas sean guardas en caché y cuáles son solicitadas directamente a la API de Discord.
 
 En el siguiente gráfico pueden ver una comparativa del consumo y datos en caché entre diferentes librerías, [fuente](https://github.com/timotejroiko/discord.js-light#readme).
 
-<img src="https://github.com/timotejroiko/discord.js-light/raw/v3/bench.png" alt="Discord.js-light graph" style="zoom:50%;" />
+![img](https://github.com/timotejroiko/discord.js-light/raw/v3/bench.png)
 
 ### Pros y contras
 Para entender mejor qué características ofrece esta, hágamos una comparativa:

@@ -1,5 +1,6 @@
 ---
 title: Registro de cambios
+slug: changelog-v4.0
 date: 2020-04-26 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
