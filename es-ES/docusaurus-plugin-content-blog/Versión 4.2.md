@@ -4,7 +4,7 @@ date: 2020-09-20 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
 authorImageURL: https://github.com/vicente015.png
-image: /img/blog-covers/v4.2.png
+image: /img/blog-covers/version-4.2.png
 categories: [Changelog]
 tags: [D-Safe, Servidor Discord, "4.0"]
 ---
@@ -12,7 +12,7 @@ tags: [D-Safe, Servidor Discord, "4.0"]
 Bienvenidos al registro de cambios de la **versión 4.2**.
 
 En esta versión hemos priorizado arreglar los problemas de consumo de recursos y latencia que nos estaban dando sobrecostes. Además, priorizamos arreglar y mejorar las funciones principales que más se usan del bot.
-![Blog cover](/img/blog-covers/v4.2.png)
+![Blog cover](/img/blog-covers/version-4.2.png)
 <!--truncate-->
 
 Antes de empezar a comentar los cambios, un pequeño avance de en lo que empezaremos a trabajar para próximas versiones.

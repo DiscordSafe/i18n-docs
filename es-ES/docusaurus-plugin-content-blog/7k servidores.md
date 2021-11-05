@@ -4,13 +4,13 @@ date: 2020-11-27 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
 authorImageURL: https://github.com/vicente015.png
-image: /img/blog-covers/7k-servers.png
+image: /img/blog-covers/7k.png
 categories: [Noticias]
 ---
 # ¡Hemos llegado a 7K de servidores!
 Muchas gracias a todos por el gran reciente apoyo que nos han dado, el bot está alcanzando unas cifras nunca vistas.
 
-![Blog cover](/img/blog-covers/7k-servers.png)
+![Blog cover](/img/blog-covers/7k.png)
 <!--truncate-->
 
 ## Agradecimientos especiales

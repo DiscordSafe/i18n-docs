@@ -4,14 +4,14 @@ date: 2020-07-18 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
 authorImageURL: https://github.com/vicente015.png
-image: /img/blog-covers/v4.1.png
+image: /img/blog-covers/version-4.1.png
 categories: [Changelog]
 ---
 
 Bienvenidos al registro de cambios que se han hecho desde las versiones 4.1.0 a la 4.1.9.
 
 Esta versión ha sido mayoritariamente un arreglo de los errores que han existiendo en anteriores versiones, hemos priorizado arreglar los errores antes de introducir nuevas funciones y hemos añadido muy pocas nuevas funciones.
-![Blog cover](/img/blog-covers/v4.1.png)
+![Blog cover](/img/blog-covers/version-4.1.png)
 <!--truncate-->
 Antes de empezar con el registro de cambios me gustaría compartir algunas de las cosas que se vienen en las próximas versiones.
 

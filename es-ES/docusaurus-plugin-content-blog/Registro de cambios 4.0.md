@@ -4,13 +4,13 @@ date: 2020-04-26 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
 authorImageURL: https://github.com/vicente015.png
-image: /img/blog-covers/changelog-v4.0.png
+image: /img/blog-covers/changelog-4.0.png
 categories: [Changelog]
 ---
 # Registro de cambios
 
 A continuación podréis ver todos los cambios que se han hecho en la versión 4.0 de Discord Safe.
-![Blog cover](/img/blog-covers/changelog-v4.0.png)
+![Blog cover](/img/blog-covers/changelog-4.0.png)
 <!--truncate-->
 Los cambios están divididos en diferentes categorías:
 

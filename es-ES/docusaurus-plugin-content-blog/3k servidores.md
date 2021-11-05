@@ -4,13 +4,13 @@ date: 2020-06-23 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
 authorImageURL: https://github.com/vicente015.png
-image: /img/blog-covers/3k-servers.png
+image: /img/blog-covers/3k.png
 categories: [Noticias]
 ---
 # ¡Hemos llegado a 3K de servidores!
 Recientemente gracias a todo el apoyo que nos han dado hemos llegado a la gran cantidad de +3.000 servidores, por ello queremos agradecer a todo el mundo el increíble apoyo que nos están dando organizando un evento que le contamos ahora.
 
-![Blog cover](/img/blog-covers/3k-servers.png)
+![Blog cover](/img/blog-covers/3k.png)
 <!--truncate-->
 
 ## Agradecimientos especiales

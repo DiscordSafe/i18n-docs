@@ -4,13 +4,13 @@ date: 2020-04-25 00:00:00
 author: Vicente
 authorTitle: Developing D-Safe
 authorImageURL: https://github.com/vicente015.png
-image: /img/blog-covers/v4.0.png
+image: /img/blog-covers/version-4.0.png
 categories: [Noticias]
 ---
 # ¡Bienvenido a la versión 4.0!
 
 Después de 9 meses de trabajo, pensar mucho y unos largos y desesperantes dolores de cabezas debido a los errores hemos lanzado Discord Safe 4.0, una versión que trae una grandísima cantidad de nuevos comandos y funciones de los que estamos orgullosos de mostrar. Como no tengo ni idea de por donde empezar esto, empezaré dando un resumen de las principales novedades y después hablaré de cada una de ellas.
-![Blog cover](/img/blog-covers/v4.0.png)
+![Blog cover](/img/blog-covers/version-4.0.png)
 <!--truncate-->
 * * *
 
