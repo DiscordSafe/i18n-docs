@@ -2,9 +2,7 @@
 title: Como recuperamos al bot de una muerte lenta
 slug: como-recuperamos-al-bot
 date: 2020-11-27 00:00:00
-author: Vicente
-authorTitle: Developing D-Safe
-authorImageURL: https://github.com/vicente015.png
+authors: vicente
 image: /img/blog-covers/como-salvamos-el-bot.png
 categories: [Código]
 ---

@@ -2,9 +2,7 @@
 title: Lanzamos la versión 4.0
 slug: v4.0
 date: 2020-04-25 00:00:00
-author: Vicente
-authorTitle: Developing D-Safe
-authorImageURL: https://github.com/vicente015.png
+authors: vicente
 image: /img/blog-covers/version-4.0.png
 categories: [Noticias]
 ---

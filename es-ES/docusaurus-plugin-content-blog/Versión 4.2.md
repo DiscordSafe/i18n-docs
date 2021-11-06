@@ -2,9 +2,7 @@
 title: Versión 4.2
 slug: v4.2
 date: 2020-09-20 00:00:00
-author: Vicente
-authorTitle: Developing D-Safe
-authorImageURL: https://github.com/vicente015.png
+authors: vicente
 image: /img/blog-covers/version-4.2.png
 categories: [Changelog]
 tags: [D-Safe, Servidor Discord, "4.0"]

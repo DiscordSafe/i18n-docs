@@ -2,9 +2,7 @@
 title: 7K de servidores
 slug: 7k-servers
 date: 2020-11-27 00:00:00
-author: Vicente
-authorTitle: Developing D-Safe
-authorImageURL: https://github.com/vicente015.png
+authors: vicente
 image: /img/blog-covers/7k.png
 categories: [Noticias]
 ---

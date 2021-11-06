@@ -2,9 +2,7 @@
 title: Versión 4.1
 slug: v4.1
 date: 2020-07-18 00:00:00
-author: Vicente
-authorTitle: Developing D-Safe
-authorImageURL: https://github.com/vicente015.png
+authors: vicente
 image: /img/blog-covers/version-4.1.png
 categories: [Changelog]
 ---
