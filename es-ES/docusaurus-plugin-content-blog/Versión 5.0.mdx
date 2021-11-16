@@ -1,5 +1,5 @@
 ---
-title: Versión 5.0
+title: Versión 5.0 Beta
 slug: v5.0
 date: 2034-02-14 00:00:00
 authors: vicente
@@ -10,7 +10,7 @@ categories: [Changelog]
 Bienvenidos a la versión **`5.0`**, esta versión se enfoca en mejorar radicalmente la moderación con D-Safe.
 La versión está actualmente en desarrollo y puedes probarla y dejar tus sugerencias y opiniones gracias a la beta abierta en la que puedes participar invitando al bot beta.
 
-![Blog cover](/img/blog-covers/version-5.0.png)
+![Blog cover](/img/blog-covers/version-4.2.png)
 <!--truncate-->
 
 import clsx from 'clsx';
@@ -30,10 +30,25 @@ import styles from '../../../src/pages/styles.module.css';
 ![gif](https://i.imgur.com/A0akttH.gif)
 
 ## Slash Commands :ribbon: 
-Se introduce el soporte inicial para Slash Commands con pocos comandos básicos para ir añadiendo más y mejores en un futuro.
-* `/ping`.
-* `/avatar`.
-* `/topbots`.
+Se han pasado todos los comandos a comandos de barra diagonal, ahora puedes ejecutarlos poniendo `/`. [**ver lista completa**](/docs/beta/slashy-list)
+
+## Context menus 🪄
+Se han añadido comandos de menú de contexto, ahora puedes ejecutar comandos directamente al hacer click derecho (Click derecho > Aplicaciones) sobre algo (solo en pc por ahora).
+* Sobre mensajes:
+    * Approve suggestion
+    * Deny suggestion
+    * Delete suggestion 
+    * Blockword, bloquea el contenido del mensaje.
+    * Set verification message, establece el mensaje de verificación (reacción) con click derecho para evitar tener que explicar cómo copiar ids, etc.
+* Sobre usuarios:
+    * User cases
+    * User warnings
+    * User info
+    * Warn
+    * Mute
+    * Unmute
+    * Clear all messages
+    * Softban
 
 ## Cosas nuevas :sparkles:
 Cosas completamentes nuevas recién sacadas del horno.
@@ -106,10 +121,14 @@ Una gran tonelada de nuevos útiles comandos.
 
 - **¡Nuevas insignias de D-Safe!**, se mostrarán en el `info` y `server`.
 - **+15 opciones en el `clear`** Algunas son `clear match/not/startsWith/endsWith/invites/links/embeds/before/after/...`, salen todas con `help clear`.
-- **HEMOS MATADO A LAS REACCIONES, AHORA TODOS SON BOTONES.** *(ya no hay que esperar 4 segundos a que el bot pueda añadir cada reacción para moverte por las opciones de un comando)*
-- **Nuevo formato de fechas y tiempo**, ahora en las fechas y tiempos que se muestran en el bot se usa el nuevo formato de fechas en mensajes de Discord, puedes verlo por ejemplo en el `info`.
-- **Logs de hilos**, los hilos son una nueva característica de Discord aún no anunciada que permite crear diferentes canales a partir de un mensajes para dividir los temas que pueden ocurrir en un canal, actualmente los puedes probar creando un servidor con @D-Safe Beta#3201, que no tenga más de __5 miembros en total__ y activándolo desde ajustes del servidor (en pc).
-- **Nuevos menús de selección (dropdowns) en el comando `setup`**, configurar la verificación nunca ha sido más fácil, se usan al configurar el canal, rol de usuario, rol de no verificado y el resto de configuraciones opcionales.
+- ¡**Soporte a nuevas características de Discord!**
+    - Todos los selectores por reacción han sido cambiados por botones.
+    - **Nuevo formato de fechas y tiempo**, ahora en las fechas y tiempos que se muestran en el bot se usa el nuevo formato de fechas en mensajes de Discord, puedes verlo por ejemplo en el `info`.
+    - **Logs de hilos**
+    - Nuevos menús de selección (dropdowns) en el comando `setup`, configurar la verificación nunca ha sido más fácil, se usan al configurar el canal, rol de usuario, rol de no verificado y el resto de configuraciones opcionales.
+    - Ícono de rol y enlace en `roleinfo`.
+    - Soporte a avatares por servidor en `avatar` y `userinfo`.
+    - Soporte a banners y color personalizado en `userinfo`.
 - Nuevo pack de palabras bloqueadas `pacman`, bloquea todos los pacmans! `blockword add pack pacman`.
 - Logs de eventos de canales escenario, creación, eliminación y actualización de eventos en los canales escenario.
 - ¡Opción de ignorar canales y roles en los filtros!
@@ -159,6 +178,17 @@ Comandos o cosas mejorados en todos los aspectos del bot.
 * Ahora un usuario podrá tener varios premiums en distintos servidores.
 * Selección de servidor al hacer `premium redeem` si tiene varios premiums.
 * Explicaciones y embeds mejorados sobre premium.
+* El `approve` ahora se puede usar sin depender del modo de verificación aprobación, acepta menciones, IDs y "all".
+* Selección de idiomas en `setlang` movido a selector.
+* Se borra el mensaje que hizo la persona cuando envía una sugerencia
+* `help` y `commands` renovados con botoncitos chulos. 
+* Añadida cantidad de cases/warnings en las últimas X tiempo.
+* Imágenes en `avatar` a máxima calidad.
+* Automatización de generación de premium mejorada. 
+* El `blockword` ahora da error si le pones palabras que ya están bloqueadas. 
+* El `commands` edita el mensaje de 'revisa tus mds' si no puede y le pone la lista de comandos ahí. 
+* El filtro de invites ha sido mejorado. 
+* Soporte a todos los fomatos de colores en `suggestions setcolor`. *típica cosa en la que pierdes 3h que nadie acaba aprovechando*
 
 ## Arreglo de bugs :bug:
 Un abrazo enorme a todos los que probaron y reportaron estos bugs.
@@ -198,3 +228,10 @@ Un abrazo enorme a todos los que probaron y reportaron estos bugs.
 * El filtro anti-spam no ignoraba correctamente a los roles ignorados.
 * Las palabras bloqueadas no ignoraban correctamente a los roles ignorados.
 * El `setup` no respondía cuando tenías canales con descripciones muy largas sin espacios.
+* Arreglada fecha incorrecta en log de nuevo miembro.
+* Arreglado bug de undefined en las características del server.
+* El `unban` ahora encuentra bien a los usuarios por usernames.
+* El `mute` y `unmute` ya configuran bien los canales.
+* Arreglado el `setup`.
+* Logs de hilos arreglados.
+* Verificación por captcha arreglada.
