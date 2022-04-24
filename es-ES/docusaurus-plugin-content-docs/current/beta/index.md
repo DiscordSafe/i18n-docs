@@ -1,5 +1,5 @@
 ---
-id: intro
+id: index
 title: Introducción a la Beta Pública
 sidebar_label: Introducción a la Beta Pública
 ---
