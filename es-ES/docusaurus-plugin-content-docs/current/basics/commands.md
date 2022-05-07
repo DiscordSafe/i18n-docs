@@ -1,6 +1,6 @@
 ---
 id: commands
-title: Comandos 
+title: Comandos
 sidebar_label: Comandos
 ---
 Lista de comandos de D-Safe.
@@ -88,3 +88,137 @@ Recuerda que no debes poner los siguientes símbolos al usar el comando.
 | approve      | Aprueba la entrada al servidor a los nuevos usuarios. | `<@Usuario>`                                                                                                                                                                    | `d.approve @Vicente#0001`            | `MANAGE_ROLES` |
 | verification | Modifica la configuración de la verificación.         | `off / setmode <Modo(approval, reaction, verification, captcha)> / setguest <@Rol / Rol ID> / setuser <@Rol / Rol ID> setchannel <#Canal / Canal ID> / setmessage <Mensaje ID>` | `d.verification setuser @Verificado` | `MANAGE_GUILD` |
 | verifyme     | Te da el rol de usuario en el servidor.               |                                                                                                                                                                                 |                                      |                |
+
+
+## Slash Commands
+
+### Config
+
+* blockword
+    * ignore
+        * channel
+        * role
+    * pack
+        * add
+        * remove
+    * word
+        * add
+        * remove
+    * help
+    * list
+    * reset
+* filter
+    * help
+    * anti-iploggers
+        * toggle
+    * anti-spam
+        * toggle
+    * images
+        * toggle
+    * invites
+        * toggle
+    * ignore
+        * channel
+        * role
+* setlang
+* setprefix
+* settings
+* setup
+
+### Info
+
+* changelog
+    * follow
+    * view
+* avatar
+* botinfo
+* commands
+* help
+* inviteinfo
+* mail
+* ping
+* roleinfo
+* serverinfo
+* topbots
+* userinfo
+
+### Moderation
+
+* clear
+    * advanced
+    * basic
+
+* clearwarn
+    * user
+    * all
+* ban
+* case
+* cases
+* deafen
+* hackban
+* kick
+* modstats
+* mute
+* reason
+* softban
+* unban
+* undeafen
+* unmute
+* warn
+* warnings
+
+### Util
+
+* suggestions
+    * autoaccept
+        * disable
+        * set
+    * channels
+        * disable
+        * set
+    * customemojis
+        * disable
+        * set
+    * palette
+        * help
+        * set
+        * setcolor
+    * approve
+    * cooldown
+    * delete
+    * deny
+    * disable
+    * editcomment
+    * help
+    * list
+    * massaction
+    * questionemoji
+    * role
+* clearbans
+* delrole
+* emoji
+* genpassword
+* reportbug
+* suggest
+
+### Verification
+
+* approve
+    * all
+    * user
+* verification
+    * setage
+        * disable
+        * set
+    * disable
+    * help
+    * setattempts
+    * setchannel
+    * setguest
+    * setmessage
+    * setmode
+    * settime
+    * setuser
+    * showconfig
+* verifyme
+

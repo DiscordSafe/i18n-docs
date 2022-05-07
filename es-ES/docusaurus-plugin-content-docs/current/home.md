@@ -8,20 +8,32 @@ D-Safe es un bot de moderación, utilidad y seguridad creado para **resolver tod
 * * *
 
 # Qué ofrece {#features}
-* **Verificación** <br/> 
+* **Auto Moderación Avanzada** <br/>
+  Castiga a los usuarios automáticamente al infringir filtros, registra todas las acciones de moderación.
+
+* **Estadísticas de moderación** <br/>
+  Visualice los tipos de castigos y los moderadores más activos.
+
+* **Anti-Raid y Anti-Nuke** <br/>
+  Limita los usuarios que pueden entrar y las acciones peligrosas que se pueden hacer en un tiempo.
+
+* **Poderosos filtros de texto** <br/>
+  Acabe con el flood, spam, palabras repetidas y muchas mayúsculas.
+
+* **Filtros de enlaces** <br/>
+  Acabe con las invitaciones, iploggers, estafas y phishing.
+
+* **Logs** <br/>
+  Sistema avanzado de logs que registra todo lo que sucede en su servidor y al día con las nuevas características de Discord.
+
+* **Verificación** <br/>
   Verifique a los usuarios nuevos que entran en su servidor para comprobar que no son maliciosos.
-
-* **Filtros** <br/> 
-  Mantenga los chats de su servidor magníficamente limpios sin contenido extraño con nuestros filtros.
-
-* **Moderación** <br/> 
-  Modere con ban, kick, mute, anti-spam y registros de todos los eventos.
 
 * **Sugerencias** <br/>
   Reciba sugerencias de sus usuarios, autoacepte sugerencias, cambie la paleta de colores, customize los emojis.
 
-* **Mucho más** <br/> 
-  Modo alarma, palabras bloqueadas, logs, baneo de usuarios maliciosos, generador de contraseñas... 
+* **Mucho más** <br/>
+  Descúbralo usted mismo :)
 
-# ¿Por dónde empiezo? {#getting-started}
+# ¿Suena bien? {#getting-started}
 Empieza [invitando a D-Safe a tu servidor](intro/invite.md) en pocos clicks.

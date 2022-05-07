@@ -1,0 +1,158 @@
+---
+id: index
+title: D-Safe Premium
+sidebar_label: ¿Qué es D-Safe Premium?
+image: https://i.imgur.com/qI7peN6.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
+
+Mejora D-Safe con Premium y apoya el desarrollo y mantenimiento del bot para poder seguir traer actualizaciones mejor trabajadas y con las características que esperas.
+
+## Beneficios {#features}
+
+<div className="discord-blocks">
+  <div className="discord-block">
+    <h3>Filtro imágenes NSFW</h3>
+    <div className="description">Prohibe las imágenes NSFW fuera de canales NSFW.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/CjN6KaE.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Filtro IPlogger Avanzado</h3>
+    <div className="description">Bloquea una gran base de dato con +800 iploggers.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/2gvRtZR.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Auto Forceban</h3>
+    <div className="description">Banea automáticamente a los usuarios que reportados como maliciosos.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/L2DE8gv.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Rol encargado de sugerencias</h3>
+    <div className="description">Establece el rol para el encargado de aceptar o rechazar las sugerencias.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/wzWHCzP.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Paleta de colores customizada</h3>
+    <div className="description">Personaliza la paleta de colores de las sugerencias como quieras para que concuerden con el los colores representativos de tu servidor.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/nfv6AlN.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Canal solo para sugerencias</h3>
+    <div className="description">Selecciona un canal donde solo se enviarán sugerencias.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/BWOyypi.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Cooldown entre sugerencias</h3>
+    <div className="description">Customiza el tiempo de espera que deben de esperar los usuarios para enviar una nueva sugerencia.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/ownouid.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Emojis customizados de las reacciones</h3>
+    <div className="description">Customiza los emojis de las reacciones de las sugerencias y pon unos más guays.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/nGFOQv0.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Menor tiempo de respuesta.</h3>
+    <div className="description">La rapidez está aquí.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/VRoclmM.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Logs de mejoras</h3>
+    <div className="description">Agradece a los usuarios que dan mejoras a tu servidor, notifica cuando dejan de dar mejora y sube o baja de nivel.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/ZjCutJW.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Insignia especial</h3>
+    <div className="description">Colecciona y demuestra lo guay que eres con una insignia especial en los comando userinfo y serverinfo.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/Cl2pkRm.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Soporte prioritario</h3>
+    <div className="description">Recibe una respuesta del soporte lo antes posible.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/Io5OPyN.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Roles y canales exclusivos</h3>
+    <div className="description">Participa en los canales exclusivos de nuestra comunidad.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/IS4ajjd.png" className="image"></img>
+    </div>
+  </div>
+  <div className="discord-block">
+    <h3>Tester</h3>
+    <div className="description">Forma parte si quieres del programa de tester y participa en los experimentos de nuevas características.</div>
+    <div className="image-wrapper">
+      <img src="https://i.imgur.com/ZQ1nxwc.png" className="image"></img>
+    </div>
+  </div>
+    <div className="discord-block">
+    <h3>Informe de infracciones</h3>
+    <div className="description">Recibe un informe con todos los mensajes del usuario que han infringido algún filtro junto con los logs de moderación.</div>
+  </div>
+</div>
+
+
+## Tiers {#tiers}
+
+<div className="blocks">
+  <div className="block">
+    <a href="https://patreon.com/join/DiscordSafe" className="block-elements">
+      <img className="" src="https://i.imgur.com/kK5yd1q.png"></img>
+      <div className="block-text">
+        <img className="emoji" src="https://i.imgur.com/MooN7Us.png"></img>
+        <h3>Tier 1</h3>
+        <p>Desbloquea premium en 1 servidor.</p>
+      </div>
+    </a>
+  </div>
+  <div className="block">
+    <a href="https://patreon.com/join/DiscordSafe" className="block-elements">
+      <img className="" src="https://i.imgur.com/KNK53La.png"></img>
+      <div className="block-text">
+        <img className="emoji" src="https://i.imgur.com/LGSNz6l.png"></img>
+        <h3>Tier 2</h3>
+        <p>Desbloquea premium en 2 servidores.</p>
+      </div>
+    </a>
+  </div>
+  <div className="block">
+    <a href="https://patreon.com/join/DiscordSafe" className="block-elements">
+      <img className="" src="https://i.imgur.com/wgTWvqp.png"></img>
+      <div className="block-text">
+        <img className="emoji" src="https://i.imgur.com/6su7OrW.png"></img>
+        <h3>Tier 3</h3>
+        <p>Desbloquea premium en 3 servidores.</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+# Obtén D-Safe Premium [apoyándonos](support-us.mdx) {#support-us}

@@ -12,7 +12,7 @@ sidebar_label: Reglas de la comunidad
 6. Procure no mencionar a los desarrolladores para cosas absurdas, si necesita ayuda pídala a los miembros de soporte.
 7. Se pide seriedad y respeto hacia los moderadores y staff, si le dice que pare, hágalo.
 8. No discutir sobre temas políticos, raciales y temas religiosos sensibles.
-9. Queda totalmente prohibido la suplantación de identidad, el uso de una segunda cuenta para fines dañinos, la estafa dentro del servidor, publicar contenido intolerante y la driscrimación hacía otros usuarios.
+9. Queda totalmente prohibido la suplantación de identidad, el uso de una segunda cuenta para fines dañinos, la estafa dentro del servidor, publicar contenido intolerante y la discriminación hacía otros usuarios.
 10. No se permite difundir, compartir o hacer uso de algún tipo de error o bug sobre el bot/web que no hayan sido notificados anteriormente.
 11. Se debe tratar a todas las persona con respeto, evita cualquier tipo de burla o mensajes groseros, se eliminará el lenguaje inapropiado (insultos excesivos, insultos raciales, intentos deliberados de instigar reacciones negativas, etc.) y los usuarios recibirán una advertencia por escrito, expulsados o baneados según la gravedad.
 12. No revelar información personal de cualquier usuario, respeta la privacidad.
@@ -25,4 +25,4 @@ sidebar_label: Reglas de la comunidad
 * No pedir roles, premium, o Discord Nitro.
 * Sólo preguntas y temas serios en #❓▹support-soporte.
 * Memes, links random, shitposting, etc. debe ser publicado en #📺▹multimedia.
-* No pretendemos ser exahustivos, el personal del servidor se reserva el derecho de decidir sobre las sanciones al infringir cualquiera de estas reglas.
+* No pretendemos ser exhaustivos, el personal del servidor se reserva el derecho de decidir sobre las sanciones al infringir cualquiera de estas reglas.
