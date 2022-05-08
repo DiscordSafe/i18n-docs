@@ -9,7 +9,7 @@ Reciba feedback de sus usuarios mediantes sugerencias completamente customizable
 
 <DiscordMessages>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-      <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" color="#a9eda4" timestamp="12/01/2020">
+      <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" color="#a9eda4">
                             Me gustaría un canal de #gaming, donde poder buscar amigos para partidas de videojuegos :D, estaría genial
         <discord-embed-fields slot="fields">
         <discord-embed-field field-title="Comentario del staff" inline="1" inline-index="1">Lo he hablado con el staff y ¡nos encanta tu idea! ya hemos creado el canal
@@ -20,18 +20,24 @@ Reciba feedback de sus usuarios mediantes sugerencias completamente customizable
                                     Votos negativos: <b>0</b> <code>0%</code>
         </discord-embed-field>
         </discord-embed-fields>
-        <span slot="footer">ID de la sugerencia: 3</span>
+        <discord-embed-footer slot="footer" timestamp="12/01/2020">ID de la sugerencia: 3</discord-embed-footer>
       </discord-embed>
+      <discord-reactions slot="reactions">
+        <discord-reaction name="👍" count="13" reacted/>
+        <discord-reaction name="👎" count="0"/>
+      </discord-reactions>
       </discord-message>
 </DiscordMessages>
 
 ## Establecer el canal de sugerencias {#set-channel}
 Establezca el canal donde se enviarán las sugerencias de los usuarios.
-Establézcalo con `d.suggestions setchannel #Canal/CanalID`.
+Establezca con `/suggestions channels set`.
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setchannel <discord-mention type="channel">sugerencias</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> El canal de sugerencias se ha establecido correctamente a <discord-mention type="channel">sugerencias</discord-mention>.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions channels"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de sugerencias se ha establecido correctamente a <discord-mention type="channel">sugerencias</discord-mention>.
+  </discord-message>
 </DiscordMessages>
 
 ## Establecer canal de sugerencias aprobadas {#set-approved-channel}
@@ -39,11 +45,11 @@ Establézcalo con `d.suggestions setchannel #Canal/CanalID`.
 Esto es opcional si es que quiere hacer que se envíen notificaciones cuando se aprueba una sugerencia.
 :::
 
-Establézcalo  con `d.suggestions setapproved #Canal/CanalID`.
-
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setapproved <discord-mention type="channel">sugerencias-aprobadas</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> El canal de sugerencias aprobadas se ha establecido correctamente a <discord-mention type="channel">sugerencias-aprobadas</discord-mention>.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions channels"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de sugerencias aprobadas se ha establecido correctamente a <discord-mention type="channel">sugerencias-aprobadas</discord-mention>.
+  </discord-message>
 </DiscordMessages>
 
 ## Establecer canal de sugerencias denegadas {#set-denied-channel}
@@ -51,11 +57,14 @@ Establézcalo  con `d.suggestions setapproved #Canal/CanalID`.
 Esto es opcional si es que quiere hacer que se envíen notificaciones cuando se deniega una sugerencia.
 :::
 
-Establézcalo con `d.suggestions setdenied #Canal/CanalID`.
+Establezca el canal donde se enviarán las sugerencias de los usuarios.
+Establezca con `/suggestions channels set`.
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions setdenied <discord-mention type="channel">sugerencias-denegadas</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> El canal de sugerencias denegadas se ha establecido correctamente a <discord-mention type="channel">sugerencias-denegadas</discord-mention>.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions channels"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de sugerencias denegadas se ha establecido correctamente a <discord-mention type="channel">sugerencias-denegadas</discord-mention>.
+  </discord-message>
 </DiscordMessages>
 
 ## Activar el emoji de indeciso {#set-question-emoji}
@@ -120,8 +129,9 @@ Mira la lista de sugerencias con `d.suggestions list`, si hay más de una aparec
 
 <DiscordMessages>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-      <discord-embed slot="embeds" color="#5865F2" timestamp="12/01/2020" embed-title="Sugerencias pendientes" thumbnail="https://i.imgur.com/sdtCxV3.png">
-        <img className="discord-emoji" src="https://cdn.discordapp.com/emojis/779658830421557290.png?v=1"></img> » <code>ID de la sugerencia 1</code> Por <discord-mention type="user">Usuario</discord-mention><br></br>Me gustaría un canal de <discord-mention type="channel">gaming</discord-mention>, donde poder buscar amigos para partidas de videojuegos :D, estaría genial
+      <discord-embed slot="embeds" color="#5865F2" embed-title="Sugerencias pendientes" thumbnail="https://i.imgur.com/sdtCxV3.png">
+      <discord-embed-description slot="description"><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/779658830421557290.png?v=1"></img> » <code>ID de la sugerencia 1</code> Por <discord-mention type="user">Usuario</discord-mention><br></br>Me gustaría un canal de <discord-mention type="channel">gaming</discord-mention>, donde poder buscar amigos para partidas de videojuegos :D, estaría genial</discord-embed-description>
+      <discord-embed-footer slot="footer" timestamp="12/01/2020"></discord-embed-footer>
       </discord-embed>
       </discord-message>
 </DiscordMessages>

@@ -5,72 +5,107 @@ sidebar_label: Logs
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
 
-Configure los canales de logs para registrar todo lo que ocurra en su servidor. Ayude a sus moderadores saber qué es lo que ha ocurrido usando unos poderosos logs.
+Configure los canales de logs para registrar todo lo que ocurre en su servidor.
 
-## General {#general}
+Hay varios tipos de logs disponibles:
+
+## Logs generales {#general}
 
 Los logs generales registran todo lo que ocurra, incluyendo lo que pueda ocurrir en:
 * Canales.
 * Servidor.
 * Mensajes.
 * Roles.
-* Eventos de escenario.
+* Eventos del servidor.
+* Canales escenario.
+* Hilos.
+* Actividad de voz.
 
-Use `d.logs [#Canal/CanalID/disable]` para establecerlo o desactivarlo.
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.logs <discord-mention type="channel">logs</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El canal de logs ha sido establecido a <discord-mention type="channel">logs</discord-mention>.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/logs set">
+    </discord-command>
+      <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de logs ha sido establecido a <discord-mention type="channel">logs-general</discord-mention>.
+  </discord-message>
 </DiscordMessages>
 
 <br/>
 
 <DiscordMessages>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-  <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" embed-title="Mensaje eliminado" color="#eb5e54" thumbnail="https://cdn.discordapp.com/embed/avatars/4.png">jaja eres tonto
+  <discord-message profile="bot">
+  <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" embed-title="Mensaje eliminado" color="#eb5e54" thumbnail="https://cdn.discordapp.com/embed/avatars/4.png">
+  <discord-embed-description slot="description">jaja eres tonto</discord-embed-description>
   <discord-embed-fields slot="fields">
     <discord-embed-field field-title="Canal" inline="" inline-index="1"><discord-mention type="channel">general</discord-mention> - 504679535598501898</discord-embed-field>
     </discord-embed-fields>
     <span slot="footer">Autor: 318327338226155541 | Mensaje ID: 727651117785415741</span>
   </discord-embed>
+  <discord-attachments slot="components">
+    <discord-action-row>
+      <discord-button url="#" emoji="https://cdn.discordapp.com/emojis/825059669935521803.webp?size=96&quality=lossless">Ver mensaje respondido</discord-button>
+    </discord-action-row>
+  </discord-attachments>
   </discord-message>
 </DiscordMessages>
 
-## Moderación {#mod}
+## Logs de moderación {#mod}
 
 Los logs de moderación registran todas las acciones de moderación que se hagan con el bot, incluyendo:
 * Kick.
-* Ban/Unban/Softban/Forceban.
+* Ban/softban.
 * Mute/Unmute.
 * Deafen/Undeafen.
 * Warn/Unwarn.
-* Etc.
 
-Use `d.logs mod [#Canal/CanalID/disable]` para establecerlo o desactivarlo.
+
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.logs mod <discord-mention type="channel">logs-mod</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El canal de logs de moderación ha sido establecido a <discord-mention type="channel">logs-mod</discord-mention>.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/logs set">
+    </discord-command>
+      <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de logs de moderación ha sido establecido a <discord-mention type="channel">logs-mod</discord-mention>.
+  </discord-message>
 </DiscordMessages>
 
 <br/>
 
 <DiscordMessages>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
+  <discord-message profile="bot">
     <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" embed-title="Miembro muteado" color="#ffd78f" thumbnail="https://cdn.discordapp.com/embed/avatars/4.png">
       <discord-embed-fields slot="fields">
-        <discord-embed-field field-title="Miembro" inline="1" inline-index="1"><discord-mention type="user">Usuario</discord-mention> (249561705066135552)</discord-embed-field>
-        <discord-embed-field field-title="Moderador" inline="2" inline-index="2"><discord-mention type="user">Carlos</discord-mention> (287574458963722240)</discord-embed-field>
-        <discord-embed-field field-title="Canal" inline="1" inline-index="1"><discord-mention type="channel">general</discord-mention> (750432097721778179)</discord-embed-field>
-        <discord-embed-field field-title="Tiempo" inline="2" inline-index="2"> 15m</discord-embed-field>
-        <discord-embed-field field-title="Razón" inline="3" inline-index="1"><code>Spam en general.</code></discord-embed-field>
+        <discord-embed-field field-title="Caso" inline inline-index="1"><code>18</code></discord-embed-field>
+        <discord-embed-field field-title="Miembro" inline inline-index="2"><discord-mention type="user">Usuario</discord-mention> (249561705066135552)</discord-embed-field>
+        <discord-embed-field field-title="Moderador" inline inline-index="3"><discord-mention type="user">Carlos</discord-mention> (287574458963722240)</discord-embed-field>
+        <discord-embed-field field-title="Canal" inline inline-index="1"><discord-mention type="channel">general</discord-mention> (750432097721778179)</discord-embed-field>
+        <discord-embed-field field-title="Razón" inline inline-index="2"><code>🚨 Acción tomada por el Automod. 2 infracciones en 60 segundos.</code></discord-embed-field>
+        <discord-embed-field field-title="Filtros infringidos" inline inline-index="3">Flood: 2<br></br>Total: 2</discord-embed-field>
+        <discord-embed-field field-title="Tiempo" inline inline-index="1"><discord-time>30 minutos</discord-time></discord-embed-field>
+        <discord-embed-field field-title="Último mensaje" inline inline-index="2"><discord-spoiler>wu4hfoihiuhdufbsidug</discord-spoiler></discord-embed-field>
       </discord-embed-fields>
-    <span slot="footer">Autor: 318327338226155541 | Mensaje ID: 727651117785415741</span>
+    <discord-embed-footer slot="footer" timestamp="08/05/2022"></discord-embed-footer>
     </discord-embed>
   </discord-message>
 </DiscordMessages>
 
-## Boosts {#boosts}
+## Logs de mejoras {#boosts}
 
 :::info
 Registre las nuevas mejoras y las subidas de nivel en su servidor agradeciendo a los usuarios que mejoran su servidor siendo [premium](../premium/).
 Vaya a [configuración premium](../premium/#logs) para una guía sobre cómo configurarlo.
 :::
+
+## Ver configuración actual
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/logs list">
+    </discord-command>
+      <discord-embed slot="embeds" color="#99aab5" embed-title="Guía de configuración paso a paso" url="#general" author-name="Ajustes de logs en Pruebas" author-image="https://i.imgur.com/3WVfgD9.png" thumbnail="https://i.imgur.com/91NmeWi.png">
+      <discord-embed-fields slot="fields">
+          <discord-embed-field field-title="Logs generales" inline inline-index="1"><discord-custom-emoji name="checkon"></discord-custom-emoji><discord-mention type="channel">logs-general</discord-mention></discord-embed-field>
+          <discord-embed-field field-title="Logs de moderación" inline inline-index="2"><discord-custom-emoji name="checkon"></discord-custom-emoji><discord-mention type="channel">logs-mod</discord-mention></discord-embed-field>
+          <discord-embed-field field-title="Logs de boots" inline inline-index="3"><discord-custom-emoji name="checkoff"></discord-custom-emoji></discord-embed-field>
+      </discord-embed-fields>
+      <discord-embed-footer slot="footer" footer-image="https://cdn.discordapp.com/attachments/504679726519156746/972803219451420672/logo.webp">D-Safe</discord-embed-footer>
+      </discord-embed>
+  </discord-message>
+</DiscordMessages>

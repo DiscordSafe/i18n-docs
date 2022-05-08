@@ -1,0 +1,126 @@
+---
+id: antinuke
+title: Anti-nuke, limitador de acciones
+sidebar_label: Anti-nuke
+---
+import { DiscordMessages, Discord, DiscordButton }  from '@skyra/discord-components-react';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+
+El limitador de acciones o anti-nuke __limita las acciones administrativas__ que los usuarios pueden realizar __en 1 minuto__.<br></br>
+Si se alcanza un límite el bot sancionará al usuario (lo expulsa por defecto) y avisará al dueño/a y en el canal de [logs de moderación](./logs).<br></br>
+El dueño del servidor y el propio bot son los únicos ignorados.<br></br>
+
+<DiscordMessages>
+  <discord-message profile="bot">
+      <discord-embed slot="embeds" color="#5865f2" embed-title="🚨 Límite alcanzado">
+        <discord-embed-description slot="description">
+          Se ha alcanzado el límite de <discord-bold>+2 canales creados</discord-bold> en <discord-bold>1 minuto</discord-bold>.<br></br>
+          <discord-time>hace 17 segundos</discord-time> | <discord-mention type="user">Usuario malicioso</discord-mention> creó el canal <discord-bold>#a</discord-bold>.
+          <br></br>
+          <discord-time>hace 18 segundos</discord-time> | <discord-mention type="user">Usuario malicioso</discord-mention> creó el canal <discord-bold>#a</discord-bold>.
+        </discord-embed-description>
+        <discord-embed-footer slot="footer">Le llega este mensaje porque usted es dueño/a del servidor Pruebas.</discord-embed-footer>
+      </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+## Activación {#toggle}
+Puede activarlo y desactivarlo usando `/antinuke toggle`.
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/antinuke toggle">
+    </discord-command>
+      <discord-embed slot="embeds" color="#3ba55d">
+        <discord-embed-description slot="description">
+          <discord-custom-emoji name="checknew" embed-emoji></discord-custom-emoji> Se ha activado correctamente.
+        </discord-embed-description>
+      </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+## Límites {#limits}
+Al activarse por defecto se establecerán los límites recomendados.
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/antinuke showconfig">
+    </discord-command>
+      <discord-embed slot="embeds" author-image="https://i.imgur.com/3WVfgD9.png" author-name="Configuración del anti-nuke en Servidor de pruebas" color="#99aab5">
+        <discord-embed-description slot="description">
+          El limitador de acciones o anti-nuke limita las acciones administrativas que los usuarios pueden realizar en 1 minuto.<br></br>
+          Si se alcanza un límite el bot sancionará al usuario (lo expulsa por defecto) y avisará al dueño/a y en el canal de logs de moderación (configurable con <code>/logs set</code>).<br></br>
+          El dueño del servidor y el propio bot son los únicos ignorados.
+        </discord-embed-description>
+        <discord-embed-fields slot="fields">
+          <discord-embed-field field-title="Activado" inline inline-index="1">
+            <discord-custom-emoji name="checkon"></discord-custom-emoji>
+          </discord-embed-field>
+          <discord-embed-field field-title="Castigo" inline inline inline-index="2">
+            Expulsión
+          </discord-embed-field>
+          <discord-embed-field field-title="Límites" inline inline inline-index="3">
+            • <discord-bold>+9 usuarios expulsados o baneados</discord-bold> en <discord-bold>1 minuto</discord-bold>.<br></br>
+            • <discord-bold>+2 canales creados</discord-bold> en <discord-bold>1 minuto</discord-bold>.<br></br>
+            • <discord-bold>+2 canales eliminados</discord-bold> en <discord-bold>1 minuto</discord-bold>.<br></br>
+            • <discord-bold>+4 roles creados</discord-bold> en <discord-bold>1 minuto</discord-bold>.<br></br>
+            • <discord-bold>+4 roles eliminados</discord-bold> en <discord-bold>1 minuto</discord-bold>.<br></br>
+            • <discord-bold>+8 usuarios desbaneados</discord-bold> en <discord-bold>1 minuto</discord-bold>.<br></br>
+          </discord-embed-field>
+        </discord-embed-fields>
+      </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+<br></br>
+
+Puede personalizar los límites con un límite **entre 1 y 100** usando `/antinuke setlimit`.
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/antinuke setlimit">
+    </discord-command>
+      <discord-embed slot="embeds" color="#3ba55d">
+        <discord-embed-description slot="description">
+          <discord-custom-emoji name="checknew" embed-emoji></discord-custom-emoji> Se ha establecido el límite de <discord-bold>2 usuarios desbaneados</discord-bold> en <discord-bold>1 minuto</discord-bold>.
+        </discord-embed-description>
+      </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+### Límites premium
+Los límites más avanzados y complejos están disponibles solo para los servidores premium.
+
+* Invitar a bots.
+* Dar permisos peligrosos.
+* Crear webhooks.
+
+<Link
+  className={clsx(
+    'button button-blurple'
+  )}
+  to='../premium'>
+  <img className="discord-emoji m-5" src="https://cdn.discordapp.com/emojis/882691166171181116.webp?size=96&quality=lossless"></img>
+  Suscribirse a premium
+</Link>
+
+## Castigo {#punishment}
+Cuando un usuario alcanza un límite el bot le sancionará con el castigo que haya establecido, __por defecto expulsión__.
+
+Pero puede personalizarlo con `/antinuke setpunishment`, los castigos disponibles son:
+* Quitar roles.
+* Expulsión.
+* Baneo.
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/antinuke setpunishment">
+    </discord-command>
+      <discord-embed slot="embeds" color="#3ba55d">
+        <discord-embed-description slot="description">
+          <discord-custom-emoji name="checknew" embed-emoji></discord-custom-emoji> La sanción que daré cuando se alcance un límite será <discord-bold>quitar roles</discord-bold>.
+        </discord-embed-description>
+      </discord-embed>
+  </discord-message>
+</DiscordMessages>

@@ -1,0 +1,20 @@
+---
+id: antiraid
+title: Anti-raid
+sidebar_label: Anti-raid
+---
+import { DiscordMessages, Discord }  from '@skyra/discord-components-react';
+
+El anti-raid ofrece un sistema avanzado contra <abbr title="Cuentas de usuario usadas como bots usando herramientas o código, esto incumple los términos de Discord">selfbots</abbr> y <abbr title="Un raid es un ataque coordinado de una gran cantidad de usuarios con la intención de dañar el servidor">raids</abbr>, limitando la __cantidad de usuarios que pueden entrar__ en __un tiempo__.
+Además, baneará a los usuarios que contengan invitaciones en su nombre.
+
+Toda la configuración está disponible usando `/antiraid setup`.
+
+![example](https://i.imgur.com/uCT8CiI.gif)
+
+## Adicional
+Para mayor seguridad contra estos ataques, le recomendamos configurar lo siguiente:
+
+* [La verificación](./verification), para que los usuarios verifiquen que son humanos.
+* [El filtro de no avatar](./filters#no-avatar), expulsa a los usuarios que no tengan avatar.
+* [El mínimo de edad](./verification#set-min-age), expulsa a los usuarios si no cumplen la edad mínima de creación de la cuenta.

@@ -5,134 +5,116 @@ sidebar_label: Verificación
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
 
-Establezca la verificación de su servidor con uno de **nuestros poderosos modos** para evitar usuarios conflictivos, multicuentas o bots de spam.
+La verificación le permite hacer que los nuevos usuarios tengan que verificar que son humanos para poder acceder a su servidor.
 
-* Usando el comando `d.verification` podrá ver la configuración actual de la verificación.
-* Para desactivarlo use:  `d.verification disable`
+D-Safe agregará el rol de no verificado automáticamente a los usuarios al entrar y les dará el rol de usuario al verificarse.
 
 <DiscordMessages>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-  <discord-embed slot="embeds" embed-title="Bienvenid@ a Servidor" color="#aab9fa" image="https://media.discordapp.net/attachments/750703042386591744/751400793248366592/captcha.png" thumbnail="https://i.imgur.com/Xf4UpdU.png">
+  <discord-message profile="bot">
+  <discord-embed slot="embeds" embed-title="Bienvenid@ a Servidor" color="#5865f2" image="https://media.discordapp.net/attachments/750703042386591744/751400793248366592/captcha.png" thumbnail="https://i.imgur.com/Xf4UpdU.png">
+  <discord-embed-description slot="description">Antes de continuar, debes responder este <discord-bold>captcha</discord-bold> para poder acceder al servidor. Tienes <discord-bold>4 intentos</discord-bold> y <discord-bold>3 minutos</discord-bold> para completarlo.</discord-embed-description>
   <discord-embed-fields slot="fields">
-  <discord-embed-field field-title="Captcha" inline="1" inline-index="1">Antes de continuar, debes responder este <span className="bold">captcha</span>, hazlo para poder acceder al servidor. Tienes <span className="bold">5 intentos</span> y <span className="bold">4 minutos</span> para completarlo.</discord-embed-field>
-  <discord-embed-field field-title="¿Por qué?" inline="2" inline-index="2">Esto es para proteger el servidor de los bots de spam y multicuentas.</discord-embed-field>
+    <discord-embed-field field-title="¿Por qué?" inline inline-index="1">Esto es para proteger el servidor de los bots de spam y multicuentas.</discord-embed-field>
   </discord-embed-fields>
-  <span slot="footer">Si algo falla, póngase en contacto con la administración del servidor.</span>
+  <discord-embed-footer slot="footer">Invítame, discordsafe.com/invite</discord-embed-footer>
   </discord-embed>
   </discord-message>
 </DiscordMessages>
 
-## Establecer el modo {#set-mode}
-Establezca el modo de verificación que más le convenga usando `d.verification setmode <Modo>`.
-Los modos de verificación son los siguientes:
+## Configuración rápida {#setup}
 
-| 🔧 Modo           | 📣 Descripción                                                                  | 📑 Requiere                                       | 🔐 Nivel protección |
-| :---------------: | :------------------------------------------------------------------------------ | :------------------------------------------------ | :---- |
-| **Approval**      | El usuario tiene que ser aprobado por un administrador con `d.approve @Usuario` | Canal, rol no verificado, rol usuario.            | **4** |
-| **Captcha**       | El usuario tiene que completar correctamente un captcha.                        | Canal, rol no verificado, rol usuario.            | **3** |
-| **Reaction**      | El usuario tiene que reaccionar a un mensaje para acceder al servidor.          | Canal, rol no verificado, rol usuario, mensaje.   | **2** |
-| **Verification**  | El usuario tiene que usar el comando `d.verifyme` para entrar.                  | Canal, rol no verificado, rol usuario.            | **1** |
+Usando el comando `/setup` puedes configurar la verificación de la forma más rápida y sencilla.
+
+![img](https://i.imgur.com/syANLrK.gif)
+
+
+## Modos {#modes}
+
+La verificación ofrece los siguientes modos:
+
+| 🔧 Modo           | 📣 Descripción                                                                  | 📑 Requiere                                       |
+| :---------------: | :------------------------------------------------------------------------------ | :------------------------------------------------ |
+| **Approval**      | Aprobación por un moderador usando `/approve`.                                  | Canal, rol no verificado, rol usuario.            |
+| **Captcha**       | Completar un captcha respondiendo en un canal.                                  | Canal, rol no verificado, rol usuario.            |
+| **Modal captcha** | Completar correctamente un captcha mediante un <abbr title="Ventana en la interfaz de un programa">modal</abbr> | Canal, rol no verificado, rol usuario.            |
+| **Reaction**      | Reaccionar a un mensaje.                                                        | Canal, rol no verificado, rol usuario, mensaje.   |
+| **Verification**  | Usar el comando `/verifyme`.                                                    | Canal, rol no verificado, rol usuario.            |
+
+## Modos captcha {#captcha}
+
+### Máximo de intentos {#max-attempts}
+
+La verificación captcha tiene un máximo de intentos **entre 1 y 6** para asegurar que el usuario sea expulsado al superar los intentos.
+Los intentos **por defecto son 3**.
+
+### Máximo de minutos {#max-minutes}
+La verificación captcha tiene un máximo de minutos **entre 1 y 6** para asegurar que el usuario no pasa más de la cuenta resolviendo el captcha.
+Los intentos **por minutos son 4**.
+
+## Modo reacción {#reaction}
+
+### Mensaje de verificación {#verification-message}
+
+Pudes establecer el mensaje al que los usuarios reaccionarán para verificarse usando un <abbr title="Los comandos de menú contextual son los comandos que se ejecutan haciendo Click Derecho (o mantener pulsado en móviles) > Aplicaciones sobre un mensaje o un usuario">comando de menú contextual</abbr>
+
+![img](https://i.imgur.com/hzaPaV1.gif)
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setmode captcha</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El modo ha sido establecido a <code>captcha</code></discord-message>
+  <discord-message profile="bot">
+      Bienvenido al servidor de pruebas 👋<br></br>
+      Reacciona a ✅ para verificarte y poder acceder al servidor.
+  <discord-reactions slot="reactions">
+        <discord-reaction name="✅" count="2" reacted interactive/>
+  </discord-reactions>
+  </discord-message>
 </DiscordMessages>
 
-## Establecer el canal {#set-channel}
-Debe establecer el canal de verificación donde se mandará el captcha, o donde esté el mensaje al que tengan que reaccionar o donde tienen que poner los comandos.
-
-Establezca el canal con `d.verification setchannel #Canal`.
+<br/>
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setchannel <discord-mention type="channel">bienvenidas</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> El canal ha sido establecido a <discord-mention type="channel">bienvenidas</discord-mention></discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="Set verification message">
+    </discord-command>
+      <discord-custom-emoji name="checknew"></discord-custom-emoji> El mensaje ha sido establecido a <code>972936676299116565</code>.
+  </discord-message>
 </DiscordMessages>
 
-## Establecer el rol de no verificado {#set-unverified}
-:::caution Aviso
-Usted tendrá que configurar este rol en su servidor para que solo vea los canales que usted quiera y que cuando se verifique tenga acceso completo al servidor.
-:::
 
-Este será el rol que se les dará a los nuevos usuarios al entrar al servidor antes de verificarse.
+## Edad mínima {#min-age}
 
-Establezca el rol de no verificados con:
-`d.verification setguest @Rol`.
+Para mayor seguridad contra <abbr title="Cuentas de usuario usadas como bots usando herramientas o código, esto incumple los términos de Discord">selfbots</abbr> y <abbr title="Un raid es un ataque coordinado de una gran cantidad de usuarios con la intención de dañar el servidor">raids</abbr> puedes configurar la edad mínima, las cuentas que hayan sido creadas antes de este tiempo serán expulsadas.
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setguest <discord-mention className="discord-mention discord-user-mention">No verificado</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El rol ha sido establecido a <discord-mention className="discord-mention discord-user-mention">No verificado</discord-mention></discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/verification minage set">
+    </discord-command>
+      <discord-custom-emoji name="checknew"></discord-custom-emoji> Se ha establecido la edad mínima de la cuenta de nuevos usuarios a <discord-bold>15 días</discord-bold>.
+  </discord-message>
 </DiscordMessages>
 
-## Establecer el rol de Usuario {#set-verified}
-Este será el rol que se les dará a los nuevos usuarios al verificarse (normalmente el rol Usuario).
+## Configuración manual {#old-config}
 
-El comando para establecerlo es `d.verification setuser @Rol`.
+También ofrecemos la posibilidad de configurar manualmente cada opción de la verificación por comandos.
 
-<DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setuser <discord-mention className="discord-mention discord-user-mention">Usuario</discord-mention></DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El rol ha sido establecido a <discord-mention className="discord-mention discord-user-mention">Usuario</discord-mention></discord-message>
-</DiscordMessages>
 
-## Establecer el mensaje {#set-message}
-:::caution Aviso
-**Solo es necesario este ajuste** en el modo **reaction**.
-:::
+* `/verification setage`
+* `/verification setattempts`
+* `/verification setchannel`
+* `/verification setguest`
+* `/verification setmessage`
+* `/verification setmode`
+* `/verification settime`
+* `/verification setuser`
 
-Establezca el mensaje al que tendrán que reaccionar los no verificados al unirse a su servidor.
-**Importante,** el mensaje que establezca debe de estar dentro del canal que configuró anteriormente.
 
-Configure el mensaje usando: `d.verification setmessage MensajeID`. 
+## Desactivar
 
-[¿No sabes cómo copiar una ID?](guide/copy-ids.md)
+Para desactivar la verificación use `/verification disable`.
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setmessage 756893307325513795</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El mensaje ha sido establecido a <code>756893307325513795</code>.</discord-message>
-</DiscordMessages>
-
-## Establecer el mínimo de edad {#set-min-age}
-Establezca el **mínimo de días que deben tener las cuentas** cuando se unen a su servidor, así evita que entren multicuentas o auto-bots de spam.
-
-* Configure el mínimo con: `d.verification setage <1-30 Días>`.
-* Puede desactivarlo con `d.verification setage disable`.
-
-<DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setage 20</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | Se ha establecido el tiempo mínimo de la cuenta de los nuevos usuarios a <span className="bold">20</span> días.</discord-message>
-</DiscordMessages>
-
-<DiscordMessages>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>Has sido expulsado de <span className="bold">Servidor</span> porque su cuenta no supera el mínimo de <span className="bold">20</span> días.</discord-message>
-</DiscordMessages>
-
-## Establecer máximo de intentos {#set-max-try}
-:::caution Aviso
-**Este es un ajuste opcional** del modo **captcha**.
-:::
-
-Establezca el **número máximo de intentos** que pueden hacer los usuarios en el **captcha**.
-
-Configure el máximo de intentos con ``d.verification setattempts [Número]``.
-
-Puede volver a la cantidad por defecto con ``d.verification setattempts default``.
-
-<DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification setattempts 5</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> |  Se ha establecido el máximo de intentos de la verificación a <span className="bold">5 intentos</span>.</discord-message>
-</DiscordMessages>
-
-## Establecer máximo de minutos {#set-max-min}
-:::caution Aviso
-**Este es un ajuste opcional** del modo **captcha**.
-:::
-
-Establezca el **tiempo máximo de espera** en la verificación **captcha**.
-
-Configure el máximo de intentos con ``d.verification settime [Número]`` (en minutos).
-
-Puede volver a la cantidad por defecto con ``d.verification settime default``.
-
-<DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.verification settime 4</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> |   Se ha establecido los minutos de la verificación a <span className="bold">4 minutos</span>.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/verification disable">
+    </discord-command>
+      <discord-custom-emoji name="checknew"></discord-custom-emoji> Has desactivado la verificación exitosamente.
+  </discord-message>
 </DiscordMessages>

@@ -10,12 +10,10 @@ Añade al bot a tu servidor con los siguientes pasos.
 
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import styles from '../../../../../src/pages/styles.module.css';
 
 <Link
   className={clsx(
-    'button button-blurple',
-    styles.getStarted,
+    'button button-blurple'
   )}
   to='https://discordsafe.com/invite'>
   Invitar
