@@ -62,9 +62,9 @@ Pudes establecer el mensaje al que los usuarios reaccionarán para verificarse u
 <DiscordMessages>
   <discord-message profile="bot">
       Bienvenido al servidor de pruebas 👋<br></br>
-      Reacciona a ✅ para verificarte y poder acceder al servidor.
+      Reacciona a <discord-custom-emoji url="/svg/emojis/white_check_mark.svg" name="✅" embed-emoji></discord-custom-emoji> para verificarte y poder acceder al servidor.
   <discord-reactions slot="reactions">
-        <discord-reaction name="✅" count="2" reacted interactive/>
+    <discord-reaction emoji="/svg/emojis/white_check_mark.svg" name="✅" count="2" reacted interactive/>
   </discord-reactions>
   </discord-message>
 </DiscordMessages>
