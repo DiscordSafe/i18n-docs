@@ -9,33 +9,32 @@ Reciba feedback de sus usuarios mediantes sugerencias completamente customizable
 
 <DiscordMessages>
   <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-      <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" color="#a9eda4">
-                            Me gustaría un canal de #gaming, donde poder buscar amigos para partidas de videojuegos :D, estaría genial
-        <discord-embed-fields slot="fields">
-        <discord-embed-field field-title="Comentario del staff" inline="1" inline-index="1">Lo he hablado con el staff y ¡nos encanta tu idea! ya hemos creado el canal
-        </discord-embed-field>
+    <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" color="#a9eda4">
+      <discord-embed-description slot="description">Me gustaría un canal de #gaming, donde poder buscar amigos para partidas de videojuegos :D, estaría genial.</discord-embed-description>
+      <discord-embed-fields slot="fields">
+      <discord-embed-field field-title="Comentario del staff" inline="1" inline-index="1">Lo he hablado con el staff y ¡nos encanta tu idea! ya hemos creado el canal
+      </discord-embed-field>
         <discord-embed-field field-title="Estadísticas" inline="2" inline-index="2">
-                                    Resumen: <b>+13</b><br></br>
-                                    Votos positivos: <b>13</b> <code>100%</code><br></br>
-                                    Votos negativos: <b>0</b> <code>0%</code>
+          Resumen: <b>+6</b><br></br>
+          Votos positivos: <b>6</b> <code>100%</code><br></br>
+          Votos negativos: <b>0</b> <code>0%</code>
         </discord-embed-field>
-        </discord-embed-fields>
-        <discord-embed-footer slot="footer" timestamp="12/01/2020">ID de la sugerencia: 3</discord-embed-footer>
-      </discord-embed>
-      <discord-reactions slot="reactions">
-        <discord-reaction emoji="/svg/emojis/thumbsup.svg" name="👍" count="13" reacted/>
-        <discord-reaction emoji="/svg/emojis/thumbsdown.svg" name="👎" count="0"/>
-      </discord-reactions>
-      </discord-message>
+      </discord-embed-fields>
+      <discord-embed-footer slot="footer" timestamp="12/01/2020">ID de la sugerencia: 3</discord-embed-footer>
+    </discord-embed>
+    <discord-reactions slot="reactions">
+      <discord-reaction emoji="/svg/emojis/thumbsup.svg" name="👍" count="6" reacted/>
+      <discord-reaction emoji="/svg/emojis/thumbsdown.svg" name="👎" count="1"/>
+    </discord-reactions>
+  </discord-message>
 </DiscordMessages>
 
 ## Establecer el canal de sugerencias {#set-channel}
 Establezca el canal donde se enviarán las sugerencias de los usuarios.
-Establezca con `/suggestions channels set`.
 
 <DiscordMessages>
   <discord-message profile="bot">
-    <discord-command slot="reply" profile="user" command="/suggestions channels"></discord-command>
+    <discord-command slot="reply" profile="user" command="/suggestions channels set"></discord-command>
     <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de sugerencias se ha establecido correctamente a <discord-mention type="channel">sugerencias</discord-mention>.
   </discord-message>
 </DiscordMessages>
@@ -47,7 +46,7 @@ Esto es opcional si es que quiere hacer que se envíen notificaciones cuando se 
 
 <DiscordMessages>
   <discord-message profile="bot">
-    <discord-command slot="reply" profile="user" command="/suggestions channels"></discord-command>
+    <discord-command slot="reply" profile="user" command="/suggestions channels set"></discord-command>
     <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de sugerencias aprobadas se ha establecido correctamente a <discord-mention type="channel">sugerencias-aprobadas</discord-mention>.
   </discord-message>
 </DiscordMessages>
@@ -57,12 +56,9 @@ Esto es opcional si es que quiere hacer que se envíen notificaciones cuando se 
 Esto es opcional si es que quiere hacer que se envíen notificaciones cuando se deniega una sugerencia.
 :::
 
-Establezca el canal donde se enviarán las sugerencias de los usuarios.
-Establezca con `/suggestions channels set`.
-
 <DiscordMessages>
   <discord-message profile="bot">
-    <discord-command slot="reply" profile="user" command="/suggestions channels"></discord-command>
+    <discord-command slot="reply" profile="user" command="/suggestions channels set"></discord-command>
     <discord-custom-emoji name="checknew"></discord-custom-emoji> El canal de sugerencias denegadas se ha establecido correctamente a <discord-mention type="channel">sugerencias-denegadas</discord-mention>.
   </discord-message>
 </DiscordMessages>
@@ -70,23 +66,47 @@ Establezca con `/suggestions channels set`.
 ## Activar el emoji de indeciso {#set-question-emoji}
 Puede indicar que se añada el emoji de indeciso `❓` a las reacciones de las sugerencias, para aquellos usuarios que no estén seguros.
 
-![Ejemplo](https://i.imgur.com/ARFrHal.png)
-
-Puedes configurarlo con `d.suggestions questionEmoji enable / disable`.
-
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions questionEmoji enable</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha activado la opción de interrogación (❓) en las sugerencias.</discord-message>
+  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
+    <discord-embed slot="embeds" author-image="https://cdn.discordapp.com/embed/avatars/4.png" author-name="Usuario#0000" color="#a9eda4">
+      <discord-embed-description slot="description">Me gustaría un canal de #gaming, donde poder buscar amigos para partidas de videojuegos :D, estaría genial.</discord-embed-description>
+      <discord-embed-fields slot="fields">
+      <discord-embed-field field-title="Comentario del staff" inline="1" inline-index="1">Lo he hablado con el staff y ¡nos encanta tu idea! ya hemos creado el canal
+      </discord-embed-field>
+        <discord-embed-field field-title="Estadísticas" inline="2" inline-index="2">
+          Resumen: <b>+5</b><br></br>
+          Votos positivos: <b>5</b> <code>84%</code><br></br>
+          Votos indecisos: <b>1</b> <code>16%</code><br></br>
+          Votos negativos: <b>0</b> <code>0%</code>
+        </discord-embed-field>
+      </discord-embed-fields>
+      <discord-embed-footer slot="footer" timestamp="12/01/2020">ID de la sugerencia: 3</discord-embed-footer>
+    </discord-embed>
+    <discord-reactions slot="reactions">
+      <discord-reaction emoji="/svg/emojis/thumbsup.svg" name="👍" count="6"/>
+      <discord-reaction emoji="/svg/emojis/question.svg" name="❓" count="3" reacted/>
+      <discord-reaction emoji="/svg/emojis/thumbsdown.svg" name="👎" count="1"/>
+    </discord-reactions>
+  </discord-message>
 </DiscordMessages>
 
-## Auto-aceptar sugerencias {#autoaccept-suggestions}
-Puede establecer una cantidad de votos positivos donde las sugerencias se aceptan automáticamente.
-
-Configúrelo con `d.suggestions autoaccept Número(1-1000) / disable`.
+<br></br>
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions autoaccept 20</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha establecido la cantidad para autoaceptar sugerencias a <b>20</b>.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions question-emoji"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> Se ha activado la opción de interrogación (<discord-custom-emoji url="/svg/emojis/question.svg" name="❓" embed-emoji></discord-custom-emoji>) en las sugerencias.
+  </discord-message>
+</DiscordMessages>
+
+## Auto-aceptar sugerencias {#autoapprove-suggestions}
+Puede establecer una cantidad de votos positivos donde las sugerencias se aceptan automáticamente.
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions autoapprove set"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> Se ha establecido la cantidad para autoaceptar sugerencias a <b>20</b>.
+  </discord-message>
 </DiscordMessages>
 
 ## Aceptar, denegar y borrar sugerencias {#approve-deny-delete}
@@ -96,52 +116,61 @@ La ID de la sugerencia la puede encontrar al final del mensaje de la sugerencia,
 ![Ejemplo](https://i.imgur.com/y0wOy7i.png)
 :::
 
-* Aceptar: `d.suggestions approve IDSugerencia <Comentario>`.
+<discord-custom-emoji name="newbadge"></discord-custom-emoji> **Gestionar sugerencias en 2 clicks** Ahora puedes gestionar las sugerencias de manera rápida usando un <abbr title="Los comandos de menú contextual son los comandos que se ejecutan haciendo Click Derecho (o mantener pulsado en móviles) > Aplicaciones sobre un mensaje o un usuario">comando de menú contextual</abbr>.
+
+![img](https://i.imgur.com/SILH7RP.gif)
+
+### Aceptar {##approve}
 
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions approve 15 Me ha encantado la idea, la hablaré con el equipo!</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha aprobado la sugerencia <b>15</b> correctamente.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions approve"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> Se ha aprobado la sugerencia <b>15</b> correctamente.
+  </discord-message>
+</DiscordMessages>
+
+### Denegar {##deny}
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions deny"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> Se ha denegado la sugerencia <b>15</b> correctamente.
+  </discord-message>
 </DiscordMessages>
 
 
-* Denegar: `d.suggestions deny IDSugerencia <Comentario>`.
-
-<DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions deny 16 No creo que esta idea mejore el servidor</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha denegado la sugerencia <b>16</b> correctamente.</discord-message>
-</DiscordMessages>
-
+### Borrar {##delete}
 
 :::tip
 Borrar una sugerencia borra todos los mensajes relacionados con ella, esa es la diferencia entre denegar y borrar.
 :::
 
-* Borrar: `d.suggestions delete IDSugerencia`.
-
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.suggestions delete 17</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> Se ha borrado la sugerencia <b>17</b> correctamente.</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions delete"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> Se ha borrado la sugerencia <b>15</b> correctamente.
+  </discord-message>
 </DiscordMessages>
 
-
 ## Lista de sugerencias {#list}
-Mira la lista de sugerencias con `d.suggestions list`, si hay más de una aparecerán reacciones para moverte entre ellas.
+Mira la lista de sugerencias con `/suggestions list`, si hay más de una aparecerán reacciones para moverte entre ellas.
 
 <DiscordMessages>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'>
-      <discord-embed slot="embeds" color="#5865F2" embed-title="Sugerencias pendientes" thumbnail="https://i.imgur.com/sdtCxV3.png">
-      <discord-embed-description slot="description"><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/779658830421557290.png?v=1"></img> » <code>ID de la sugerencia 1</code> Por <discord-mention type="user">Usuario</discord-mention><br></br>Me gustaría un canal de <discord-mention type="channel">gaming</discord-mention>, donde poder buscar amigos para partidas de videojuegos :D, estaría genial</discord-embed-description>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/suggestions list"></discord-command>
+    <discord-embed slot="embeds" color="#5865F2" embed-title="Sugerencias pendientes" thumbnail="https://i.imgur.com/sdtCxV3.png">
+      <discord-embed-description slot="description"><discord-custom-emoji url="https://cdn.discordapp.com/emojis/779658830421557290.png" embed-emoji></discord-custom-emoji> » <code>ID de la sugerencia 1</code> Por <discord-mention type="user">Usuario</discord-mention><br></br>Me gustaría un canal de <discord-mention type="channel">gaming</discord-mention>, donde poder buscar amigos para partidas de videojuegos :D, estaría genial</discord-embed-description>
       <discord-embed-footer slot="footer" timestamp="12/01/2020"></discord-embed-footer>
-      </discord-embed>
-      </discord-message>
+    </discord-embed>
+  </discord-message>
 </DiscordMessages>
 
 ## Acciones en masa {#mass-actions}
 Puedes aceptar, denegar y borrar sugerencias en masa si lo deseas, estos comandos no admiten comentarios.
 
-* Aceptar: `d.suggestions massapprove IDSugerencia IDSugerencia...`.
-* Denegar: `d.suggestions massdeny IDSugerencia IDSugerencia...`.
-* Borrar: `d.suggestions massdelete IDSugerencia IDSugerencia...`.
+* Aceptar: `/suggestions massaction action:Approve suggestionids:1,2,3`.
+* Denegar: `/suggestions massaction action:Deny suggestionids:1,2,3`.
+* Borrar: `/suggestions massaction action:Delete suggestionids:1,2,3`.
 
 ## Paleta de colores {#color-palette}
 Puede customizar los colores de las sugerencias, los colores cambian de nivel dependiendo del número de votos.
@@ -150,7 +179,7 @@ Puede elegir entre una de las siguientes paletas de colores:
 
 ![Paletas de colores](https://i.imgur.com/e0wPvwV.png)
 
-Puede seleccionar la peleta de colores que desea usar con `d.suggestions setpalette <Nombre paleta>`.
+Puede seleccionar la peleta de colores que desea usar con `/suggestions setpalette <Nombre paleta>`.
 
 ## Funciones premium {#premium-features}
 :::info

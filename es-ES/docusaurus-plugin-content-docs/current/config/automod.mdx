@@ -1,0 +1,50 @@
+---
+id: automod
+title: Moderación Automática
+sidebar_label: Moderación Automática
+---
+import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
+
+La automoderación le permite moderar automáticamente cuando se comentan infracciones a los filtros.
+
+El objetivo de D-Safe es ofrecer una moderación automática avanzada pero siendo sencilla y accesible para todos.
+
+La configuración de la moderación automática es importante que sea configurada dependiendo de las necesidades y cantidad de miembros del servidor.
+
+// TODO:
+> Moderación automática frente a moderación manual
+> Si es un servidor bien establecido, es probable que ya tenga un equipo de moderadores.  Quizás se pregunte, ¿por qué debo usar la moderación automática?  ¿Ya tengo moderadores?  La moderación automática no reemplaza a la moderación manual, sino que es algo que la enriquece.  Su equipo de moderación puede continuar tomando decisiones informadas basadas en el contexto dentro de su servidor y servidores de moderación automática para facilitarles ese proceso mientras se ocupan de los problemas comunes más rápido de lo que podrían hacerlo.
+
+## Términos {#terms}
+
+* **Castigo:** configuración de una __sanción__ cuando se comentan __X infracciones__ de __Y filtros__ en __Z tiempo__.
+* **Infracción:** actividad realizada por un usuario que infringe algún filtro.
+* **Sanción:** acción que se le aplica al usuario.
+
+## Configuración recomendada {#recommended-config}
+
+¿No quieres pasar mucho tiempo configurando y quieres algo básico? ¡Usa la configuración recomendada!
+
+Usa `/setup` y selecciona "Auto Moderación" para elegir los castigos que quieres en tu servidor, por defecto seleccionados los recomendados.
+
+![img](https://i.imgur.com/9dkGOUF.gif)
+
+## Configuración manual {#manual-config}
+
+Si quieres puedes añadir manualmente un castigo completamente customizable usando `/punishment add`.
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/punishment add"></discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> El castigo ha sido añadido correctamente.
+  </discord-message>
+</DiscordMessages>
+
+### Lista de castigos {#punishment-list}
+
+Usa `/punishment list` para ver la lista de castigos.
+
+### Quitar un castigo {#punishment-remove}
+
+Usa `/punishment remove` para quitar un castigo, debes usar el número del castigo que puedes ver en la lista.
+

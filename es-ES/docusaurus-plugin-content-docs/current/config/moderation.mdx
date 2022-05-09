@@ -1,0 +1,49 @@
+---
+id: moderation
+title: Moderación
+sidebar_label: Moderación
+---
+import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
+
+Configure el aspecto de moderación del bot.
+
+
+## Roles de moderadores {#mod-roles}
+
+El bot por defecto solo permitirá usar los [comandos de moderación](../commands#mod) a los usuarios con permiso de **Administrador**, **Banear miembros** o **Gestionar mensajes**, si quieres permitir a un rol/roles usarlos sin tener que configurar los permisos puedes configurar los roles de moderadores.
+
+
+* Añadir un rol: `/modroles add`.
+* Quitar un rol: `/modroles remove`.
+* Mostrar la lista de roles de moderadores: `/modroles list`.
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/modroles add">
+    </discord-command>
+      <discord-embed slot="embeds" color="#3ba55d">
+        <discord-embed-description slot="description">
+          <discord-custom-emoji name="checknew" embed-emoji></discord-custom-emoji> El rol <discord-mention type="role">Mods</discord-mention> ha sido añadido a la lista de roles moderadores, ahora los miembros con este rol podrán usar los comandos de moderación.
+        </discord-embed-description>
+      </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+
+## Notificar al sancionado al sancionarle {#notifyUsers}
+
+Por defecto el bot no notificará a los usuarios al sancionarles.
+
+* Para configurarlo globalmente usa `/setup` y elige "Moderación".
+* Para hacerlo en una sanción seleccionalo a las opciones del comando.
+
+![img](https://i.imgur.com/ZoCfmeR.png)
+
+## Borrar mensajes después de usar comandos de moderación {#deleteCmds}
+
+Por defecto el bot no borrará los mensajes después de usar los comandos de moderación.
+
+* Para configurarlo globalmente usa `/setup` y elige "Moderación".
+* Para hacerlo en una sanción seleccionalo a las opciones del comando.
+
+![img](https://i.imgur.com/mPOIrlJ.png)
