@@ -6,7 +6,6 @@ sidebar_label: Añadiendo a D-Safe
 Añade al bot a tu servidor con los siguientes pasos.
 
 ## D-Safe#5984 {#dsafe}
-* Prefijo por defecto: `d.`
 
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';

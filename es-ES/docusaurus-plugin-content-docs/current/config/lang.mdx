@@ -5,15 +5,24 @@ sidebar_label: Idioma
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
 
-El idioma por defecto del bot es **Español.**
+El bot usará el idioma que tenga establecido en los ajustes de su servidor *(si tiene comunidad activado)*, puede verlo en Ajustes del servidor > Comunidad > Vista general.
 
-## Idiomas disponibles {#avalable-locales}
+Le recomendamos que indique el idioma del bot desde esta manera.
+
+![img](https://i.imgur.com/otn7DBg.png)
+
+Si quiere indicar manualmente el idioma del bot por alguna razón puede usar el comando `/setlang`.
+
+Si no hay un idioma definido de ninguna manera, el idioma por defecto es **Español.**
+
+## Idiomas disponibles {#available-locales}
 * ``es-ES`` - Español (España).
 * ``en-US`` - Inglés (Estados Unidos).
 
-Para cambiar el idioma use `d.setlang [es-ES / en-US]`.
-
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.setlang es-ES</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El idioma del servidor ha sido establecido a <code>Español (España)</code></discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/setlang">
+    </discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> | El idioma del servidor ha sido establecido a <code>Español (España)</code>
+  </discord-message>
 </DiscordMessages>

@@ -5,15 +5,21 @@ sidebar_label: Prefijo
 ---
 import {DiscordMessages, DiscordMessage, Discord}  from '@skyra/discord-components-react';
 
-Para cambiar el prefix use `d.setprefix [nuevo prefix]`.
+Puede acceder a todos los comandos disponibles en el bot usando los <abbr title="Comandos especiales que empiezan por /">comandos de barra diagonal</abbr> sin necesidad de usar o configurar un prefijo.
+
+Pero si desea cambiar el prefijo de los comandos normales vía mensaje puede usar `/setprefix` o `d.setprefix [nuevo prefix]`.
+
 <DiscordMessages>
-  <DiscordMessage author="Usuario" avatar="https://cdn.discordapp.com/embed/avatars/4.png">d.setprefix !!</DiscordMessage>
-  <discord-message author="D-Safe" avatar="https://i.imgur.com/FFBgOWE.png" bot='true' verified='true'><img className="discord-emoji" src="https://cdn.discordapp.com/emojis/847563585025474643.png?v=1"></img> | El prefix ha sido establecido a !!</discord-message>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/setprefix">
+    </discord-command>
+    <discord-custom-emoji name="checknew"></discord-custom-emoji> | El prefix ha sido establecido a <code>!!</code>.
+  </discord-message>
 </DiscordMessages>
 
 <br/>
 
 :::tip
-**¿No te acuerdas del prefix?**
-Usa, ``@D-Safe prefix`` para ver el prefix de tu servidor.
+**¿No te acuerdas del prefijo?**
+Usa ``@D-Safe prefix`` para ver el prefijo de tu servidor.
 :::
