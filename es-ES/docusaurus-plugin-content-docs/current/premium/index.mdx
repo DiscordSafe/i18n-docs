@@ -7,34 +7,50 @@ image: https://i.imgur.com/qI7peN6.png
 
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+let iconSize = '100px';
 
 Mejora D-Safe con Premium y recibe increíble beneficios. Te agradacemos enormemente que apoyes el desarrollo del bot para poder seguir llevando la moderación avanzada a todo el mundo. <3
 
-<Link
-  className={clsx(
-    'button button-blurple'
-  )}
-  to='https://sub.discordsafe.com/sub1'>
-  1 servidor - 5,99US$
-</Link>
-<br></br>
+<section class="section_container">
+  <article class="price_card">
+    <div class="card_icon">
+      <img class="price_icon" src={useBaseUrl('/svg/Premium_Tier_1.svg')} style={{ 'padding-bottom': '1rem', width: iconSize, height: iconSize }} alt="basic_icon" />
+      <p class="number_server">1 Servidor</p>
+    </div>
+    <div class="price_container">
+      <p class="price_server">5,99 US$</p>
+      <p class="per_month">Por mes</p>
+    </div>
+    <a class="button_subscribe" href="https://sub.discordsafe.com/sub1" type="_blank">Suscribirse</a>
+  </article>
+  <article class="price_card extra_margin">
+    <div class="discount">12% Descuento</div>
+    <div class="card_icon">
+      <img class="price_icon" src={useBaseUrl('/svg/Premium_Tier_2.svg')} style={{ 'padding-bottom': '1rem', width: iconSize, height: iconSize }} alt="normal_icon" />
+      <p class="number_server">3 Servidores</p>
+    </div>
+    <div class="price_container">
+      <p class="price_server">15,82 US$</p>
+      <p class="per_month">Por mes</p>
+    </div>
+    <a class="button_subscribe" href="https://sub.discordsafe.com/sub3" type="_blank">Suscribirse</a>
+  </article>
+  <article class="price_card extra_margin">
+    <div class="discount">20% Descuento</div>
+    <div class="card_icon">
+      <img class="price_icon" src={useBaseUrl('/svg/Premium_Tier_3.svg')} style={{ 'padding-bottom': '1rem', width: iconSize, height: iconSize }} alt="normal_icon" />
+      <p class="number_server">5 Servidores</p>
+    </div>
+    <div class="price_container">
+      <p class="price_server">26,36 US$</p>
+      <p class="per_month">Por mes</p>
+    </div>
+    <a class="button_subscribe" href="https://sub.discordsafe.com/sub5" type="_blank">Suscribirse</a>
+  </article>
+</section>
 
-<Link
-  className={clsx(
-    'button button-blurple'
-  )}
-  to='https://sub.discordsafe.com/sub3'>
-  3 servidores - 15,82US$ (12% descuento)
-</Link>
-<br></br>
 
-<Link
-  className={clsx(
-    'button button-blurple'
-  )}
-  to='https://sub.discordsafe.com/sub5'>
-  5 servidores - 26,36US$ (20% descuento)
-</Link>
 <br></br>
 
 ## Beneficios {#features}
