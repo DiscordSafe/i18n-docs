@@ -56,7 +56,7 @@
     "description": "The label of footer link with label=Política de privacidad linking to https://discordsafe.com/privacy"
   },
   "copyright": {
-    "message": "Copyright © 2021 discordsafe.com.",
+    "message": "Copyright © 2022 discordsafe.com.",
     "description": "The footer copyright"
   }
 }
