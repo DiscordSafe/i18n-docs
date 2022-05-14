@@ -197,7 +197,7 @@ El premium ha sido completamente renovado.
 
 ## Arreglo de bugs :bug: {#bugs}
 
-Hay muchísimos arreglos de bugs ero solo incluimos los relevantes que estaban desde la anterior versión.
+Hay muchísimos arreglos de bugs pero solo incluimos los relevantes que estaban desde la anterior versión.
 
 * Logs de mensajes borrados con solo la ID.
 
