@@ -5,6 +5,7 @@ date: 2022-05-14 00:00:00
 authors: vicente
 image: /img/blog-covers/version-5.0.png
 categories: [Changelog]
+tags: [D-Safe, "5.0"]
 ---
 
 La versión 5.0 ya está aquí, después de un largo desarrollo, esta nueva versión está enfocada en mejorar radicalmente la moderación con D-Safe y hacerla accesible para todo el mundo. 🚀🌍
@@ -13,7 +14,7 @@ La versión 5.0 ya está aquí, después de un largo desarrollo, esta nueva vers
 
 <!--truncate-->
 
-## Prólogo 📖
+## Prólogo 📖 {#preface}
 
 Un poco de explicación sobre cómo hemos llegado hasta aquí.
 
@@ -23,10 +24,9 @@ Pero seamos sinceros, como el objetivo principal no era la moderación <u>las ca
 
 **Eso cambia hoy.** 🍃
 
+## Objetivos 🪄 {#gaosl}
 
-## Objetivos 🪄
-
-Los cambios en esta versión han sido basados en una serie de objetivos.
+Los cambios en esta versión han sido basados en los siguientes objetivos:
 
 * 🛠️ **Moderación avanzada**, [hemos convertido a D-Safe en el mejor bot de moderación](/docs/intro/comparison).
 
@@ -40,11 +40,11 @@ Los cambios en esta versión han sido basados en una serie de objetivos.
 
 ![gif](https://i.imgur.com/enwzRCM.gif)
 
-## Nuevas características :sparkles:
+## Nuevas características :sparkles: {#new-features}
 
 ¡Todas estas características las puedes probar ya! Algunos títulos pueden llevarte a la página que explica cómo configurar eso.
 
-### Generales 🎏
+### Generales 🎏 {#general-changes}
 
 - **[Todos los comandos han sido pasados a comandos de barra diagonal](/docs/basics/commands)**, tan solo escribe `/` y pruébalos.
 
@@ -56,7 +56,7 @@ Los cambios en esta versión han sido basados en una serie de objetivos.
 - **Nueva página web, documentación y blog**, ya la estás viendo, puedes darte un paseo por ella, la nueva documentación incluye:
 
   - Barra de búsqueda.
-  - Modo claro y oscuro.
+  - Tema claro y oscuro.
   - Futuro soporte para otros idiomas.
   - Mejor organización.
 
@@ -64,25 +64,25 @@ Los cambios en esta versión han sido basados en una serie de objetivos.
 
 - **[Nuevos comandos](/docs/basics/commands)**, una tonelada de nuevos comandos, la mayoría solo están disponibles mediante barra diagonal.
 
-  * `setup`, configura varios aspectos del bot seleccionando opciones.
-  * `deafen` y `undeafen`, para ensordecer/desensordecer a un miembro.
-  * `emoji`, muestra el emoji agrandado.
-  * `inviteinfo`, muestra la información de una invitación.
-  * `roleinfo`, muestra la información de un rol.
-  * `suggestions editcomment`, edita los comentarios del staff de las sugerencias ya aprobadas/denegadas.
-  * `topbots`, muestra el top de bots de Discord.
-  * `softban`, banea y desbanea inmediatamente para borrar todos sus mensajes.
-  * `delrole`, elimina un rol.
-  * `antinuke`, configura el anti-nuke.
-  * `antiraid`, configura el anti-raid.
-  * `modroles`, configura los roles de moderadores.
-  * `punishment`, configura la moderación automática.
-  * `lock`, `unlock` y `lockdown`, bloquea canales.
-  * `case` y `cases`, visualiza los casos de moderación.
-  * `duration`, cambia la duración de una sanción.
-  * `modstats`, ver estadísticas de la moderación.
-  * `reason`, cambiar la razón de un caso
-  * `cooldown`, cambia el modo lento del canal.
+  * `setup` configura varios aspectos del bot seleccionando opciones.
+  * `deafen` y `undeafen` para ensordecer/desensordecer a un miembro.
+  * `emoji` muestra el emoji agrandado.
+  * `inviteinfo` muestra la información de una invitación.
+  * `roleinfo` muestra la información de un rol.
+  * `suggestions editcomment` edita los comentarios del staff de las sugerencias ya aprobadas/denegadas.
+  * `topbots` muestra el top de bots de Discord.
+  * `softban` banea y desbanea inmediatamente para borrar todos sus mensajes.
+  * `delrole` elimina un rol.
+  * `antinuke` configura el anti-nuke.
+  * `antiraid` configura el anti-raid.
+  * `modroles` configura los roles de moderadores.
+  * `punishment` configura la moderación automática.
+  * `lock`, `unlock` y `lockdown` bloquean canales.
+  * `case` y `cases` visualiza los casos de moderación.
+  * `duration` cambia la duración de una sanción.
+  * `modstats` ver estadísticas de la moderación.
+  * `reason` cambiar la razón de un caso
+  * `cooldown` cambia el modo lento del canal.
 
 - **[Insignias de D-Safe](/docs/basics/faq#safebadges)**, se mostrarán en `/userinfo` y `/server`.
 
@@ -95,11 +95,11 @@ Los cambios en esta versión han sido basados en una serie de objetivos.
   - Soporte a avatares por servidor en `/avatar` y `/userinfo`.
   - Soporte a banners y color personalizado en `/userinfo`.
 
-### Moderación 🔨
+### Moderación 🔨 {#moderation}
 
-- **[Anti-nuke](/docs/config/antinuke)**, limita las acciones de administrador que se pueden hacer en un tiempo.
+- **[Anti-nuke](/docs/config/antinuke)** limita las acciones de administrador que se pueden hacer en un tiempo.
 
-- **[Anti-raid](/docs/config/antiraid)**, limita la cantidad de usuarios que pueden entrar a la vez.
+- **[Anti-raid](/docs/config/antiraid)** limita la cantidad de usuarios que pueden entrar a la vez.
   ![gif](https://i.imgur.com/uCT8CiI.gif)
 
 - **[Auto moderación avanzada](/docs/config/automod)**, haz que el bot se encargue de moderar él solo.
@@ -148,7 +148,7 @@ Los cambios en esta versión han sido basados en una serie de objetivos.
 
 - [Whitelist de palabras bloqueados](/docs/config/blockedwords#whitelist)
 
-### Verificación 🛡️
+### Verificación 🛡️ {#verification}
 
 - [Nuevo modo de verificación](/docs/config/verification#modes) usando esta nueva característica de Discord.
 
@@ -162,15 +162,11 @@ Los cambios en esta versión han sido basados en una serie de objetivos.
 
 - Ahora la imagen del captcha es más pequeña para que en móviles se pueda ver el último carácter correctamente.
 
-- Ahora el catpcha no es sensible a mayúsculas ni espacios.
+- Ahora el captcha no es sensible a mayúsculas ni espacios.
 
-- Mensajes del bot mejorados para ser más claros.
+- Respuestas del bot mejoradas para ser más fáciles de entender.
 
-### Sugerencias 💌
-
-- Nuevo comando `/suggestions editcomment` para editar los comentarios del staff en sugerencias ya aprobadas o denegadas.
-
-### Premium 💜
+### Premium 💜 {#premium}
 
 El premium ha sido completamente renovado.
 
@@ -178,10 +174,10 @@ El premium ha sido completamente renovado.
 - Nuevos precios.
 - Ya no se puede obtener el premium mediante voto, la funcionalidad de votos ha sido eliminada.
 - Ahora puedes tener varios premiums para varios servidores.
-- Gestión del premiumn completamente integrada en Discord con el comando `/premium`.
+- Gestión del premium completamente integrada en Discord con el comando `/premium`.
 - Hemos dejado de usar Patreon.
 
-## Mejoras varias :pushpin:
+## Mejoras varias :pushpin: {#improvements}
 
 - Mails del `/mails` ordenados bien por fecha, un alivio para tus ojos.
 - Nuevas opciones en todos los comandos de moderación.
@@ -193,13 +189,13 @@ El premium ha sido completamente renovado.
 - Se borra el mensaje que hizo la persona cuando envía una sugerencia
 - Imágenes en `/avatar` a máxima calidad.
 - El commands edita el mensaje de "revisa tus mds" si no puede y envía la lista de comandos al canal directamente.
-- Soporte a todos los fomatos de colores en `/suggestions setcolor`. *típica cosa en la que te pegas 3 horas desarrollando que nadie acaba usando*
+- Soporte a todos los formatos de colores en `/suggestions palette setcolor`.
 - Un montón de mejoras de calidad más que no son tan relevantes.
 - Ahora los logs usarán webhooks en vez de ser enviados por el bot.
 - Los logs de mensajes borrados incluyen un botón para ir al mensaje respondido si este respondía a alguno.
 
 
-## Arreglo de bugs :bug:
+## Arreglo de bugs :bug: {#bugs}
 
 Hay muchísimos arreglos de bugs ero solo incluimos los relevantes que estaban desde la anterior versión.
 
@@ -207,24 +203,24 @@ Hay muchísimos arreglos de bugs ero solo incluimos los relevantes que estaban d
 
 * La verificación por reacción no funciona si tienes configurado el canal de sugerencias.
 
-## Cosas eliminadas 💀
+## Cosas eliminadas 💀 {#shit-removed}
 En esta versión hemos decidido quitar algunas cosas.
 
 - Comandos desactivados (solo disponibles mediante comandos de barra diagonal): info, role, server, setup, suggestions, delrole, genpassword, setprefix, blockword.
 - Comandos eliminados: whitelist, baninfo, forceban, report, detect, support, alarm.
-- Se ha eliminado el soporte a los canales de tienda, ya que serán eliminados por Discord.
+- Se ha eliminado el soporte a los canales de tienda, fueron eliminados por Discord.
 
 Los motivos para estos cambios pueden ser:
 
 1. Dificultad para seguir manteniendo dicha funcionalidad.
-2. El objetivo principal del comando ha quedado obsoleto y ha sido reemplzado por algo mejor.
+2. El objetivo principal del comando ha quedado obsoleto y ha sido reemplazado por algo mejor.
 3. Poca utilidad, utilidad reemplazada por nueva función.
 
-## Agradecimientos 💞
+## Agradecimientos 💞 {#thank-you}
 
 ![gif](https://c.tenor.com/U45Q8YaJzBUAAAAC/moti-hearts.gif)
 
-Gracias a los safers que han contribuido económicamente, a los traductores por hacerlo accesible a todo el mundo, a los testers por ayudar probando y reportando los bugs de las nuevas características, a los nuevos desarrolladores que han aportado su granito de arena y su creatividad, **gracias a tí y a todos por hacer este proyecto una realidad**.
+Gracias a los safers que han contribuido económicamente, a los traductores por hacerlo accesible a todo el mundo, a los miembros de la beta que aportaron sus sugerencias sobre los nuevos cambios,a los testers por reportar bugs, a los nuevos desarrolladores que han aportado su granito de arena y su creatividad, **gracias a tí y a todos por hacer este proyecto una realidad**.
 
 > Dicho todo esto, espero que os guste la nueva versión, estaré unos días arreglando bugs y después me retiraré a comer cocos en una playa. 🥥🏖️
 >
