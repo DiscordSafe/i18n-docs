@@ -21,7 +21,7 @@
   },
   "link.item.label.Soporte": {
     "message": "Soporte",
-    "description": "The label of footer link with label=Soporte linking to https://discordsafe.com/discord"
+    "description": "The label of footer link with label=Soporte linking to /discord"
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
@@ -49,7 +49,7 @@
   },
   "link.item.label.Política de privacidad del bot": {
     "message": "Política de privacidad del bot",
-    "description": "The label of footer link with label=Política de privacidad del bot linking to https://discordsafe.com/botprivacy"
+    "description": "The label of footer link with label=Política de privacidad del bot linking to /botprivacy"
   },
   "link.item.label.Política de privacidad": {
     "message": "Política de privacidad",

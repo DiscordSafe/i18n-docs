@@ -10,7 +10,7 @@ Si estás aquí es porque quieres saber como copiar un ID, pero antes debes sabe
 # ¿Qué es un ID? {#what-is-id}
 Un ID, es como un identificador que puedes encontrar en los usuarios, canales, servidores, roles, emojis que como su palabra dice, sirve para identificarlos, todos los usuarios, canales, etc tienen uno y son normalmente usados por desarrolladores de bots.
 
-# Guía paso a paso 
+# Guía paso a paso
 
 ## 1. Debes activar el modo desarrollador. {#1-developer-mode}
 - **En PC:** Tan solo ve a ``Ajustes > Apariencia > Avanzado > Modo Desarrollador``.
@@ -36,5 +36,5 @@ Pues podrás hacerlo desde el navegador o usando click derecho en PC.
 ![Img](/img/ids-4.png)
 
 :::info Mi duda no aparece aquí
-Pregunta en nuestro [servidor público](https://discordsafe.com/discord).
+Pregunta en nuestro [servidor público](/discord).
 :::

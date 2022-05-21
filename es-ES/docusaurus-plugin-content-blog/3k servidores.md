@@ -44,7 +44,7 @@ Por apoyar al bot, donar las keys para el evento y estar siempre ahí mostrando 
 **Organizado por:** Vicente#0001
 
 ## Participar
-> Para participar ve a [nuestro servidor público](https://discordsafe.com/discord)
+> Para participar ve a [nuestro servidor público](/discord)
 
 * * *
 

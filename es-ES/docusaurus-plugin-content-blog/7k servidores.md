@@ -50,7 +50,7 @@ Por apoyar al bot seguidamente votándolo. <3
 **Organizado por:** Vicente#0001
 
 ## Participar
-> Para participar ve a [nuestro servidor público](https://discordsafe.com/discord)
+> Para participar ve a [nuestro servidor público](/discord)
 
 * * *
 
