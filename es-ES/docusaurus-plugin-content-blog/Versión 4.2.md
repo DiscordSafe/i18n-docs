@@ -4,8 +4,7 @@ slug: v4.2
 date: 2020-09-20 00:00:00
 authors: vicente
 image: /img/blog-covers/version-4.2.png
-categories: [Changelog]
-tags: [D-Safe, Servidor Discord, "4.0"]
+tags: [update, v4.x]
 ---
 
 Bienvenidos al registro de cambios de la **versión 4.2**.
@@ -48,7 +47,7 @@ Los cambios están divididos en diferentes categorías:
 
 2. 📦 Agrupación, revisión, optimización, rediseño y limpieza de comandos
 
-    Hemos juntado los comandos que hacian varias acciones bajo la misma función en uno para que sea más consistente. Además, hemos optimizado y añadido nuevas funciones a los comandos actuales para que tengan una respuesta más óptima y rápida. 
+    Hemos juntado los comandos que hacian varias acciones bajo la misma función en uno para que sea más consistente. Además, hemos optimizado y añadido nuevas funciones a los comandos actuales para que tengan una respuesta más óptima y rápida.
 
 3. 📊 Mejora de los problemas de consumo de recursos elevados.
 
@@ -60,12 +59,12 @@ Los cambios están divididos en diferentes categorías:
 - setanuncios editanuncios delanuncios
 + report
 - reportar
-+ settings 
++ settings
 - ajustes
 + filters
-- filtros 
+- filtros
 + setlang
-- idioma 
+- idioma
 + notifications
 - avisos
 + whitelist add/rem/list/reset
@@ -85,10 +84,10 @@ Los cambios están divididos en diferentes categorías:
 + alarm
 - alarma, desactivaralarma
 + clearbans
-- limpiarbans 
-+ detect 
+- limpiarbans
++ detect
 - detectar
-+ genpassword 
++ genpassword
 - generarcontraseña
 + verification, approve, verifyme
 - verificación, aprobar, verificarme

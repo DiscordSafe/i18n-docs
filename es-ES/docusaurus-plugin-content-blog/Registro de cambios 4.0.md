@@ -4,9 +4,8 @@ slug: changelog-v4.0
 date: 2020-04-26 00:00:00
 authors: vicente
 image: /img/blog-covers/changelog-4.0.png
-categories: [Changelog]
+tags: [update, v4.0]
 ---
-# Registro de cambios
 
 A continuación podréis ver todos los cambios que se han hecho en la versión 4.0 de Discord Safe.
 ![Blog cover](/img/blog-covers/changelog-4.0.png)

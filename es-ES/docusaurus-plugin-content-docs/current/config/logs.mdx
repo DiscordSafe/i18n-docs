@@ -93,7 +93,7 @@ Registre las nuevas mejoras y las subidas de nivel en su servidor agradeciendo a
 Vaya a [configuración premium](../premium/#logs) para una guía sobre cómo configurarlo.
 :::
 
-## Ver configuración actual
+## Ver configuración actual {#showconfig}
 
 <DiscordMessages>
   <discord-message profile="bot">
@@ -107,5 +107,15 @@ Vaya a [configuración premium](../premium/#logs) para una guía sobre cómo con
       </discord-embed-fields>
       <discord-embed-footer slot="footer" footer-image="https://cdn.discordapp.com/attachments/504679726519156746/972803219451420672/logo.webp">D-Safe</discord-embed-footer>
       </discord-embed>
+  </discord-message>
+</DiscordMessages>
+
+## Desactivar un tipo de log {#disable}
+
+<DiscordMessages>
+  <discord-message profile="bot">
+    <discord-command slot="reply" profile="user" command="/logs disable">
+    </discord-command>
+      <discord-custom-emoji name="checknew"></discord-custom-emoji> Los logs de **general** han sido desactivados.
   </discord-message>
 </DiscordMessages>

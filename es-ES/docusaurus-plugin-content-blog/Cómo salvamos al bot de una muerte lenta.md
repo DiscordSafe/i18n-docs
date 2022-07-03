@@ -1,15 +1,14 @@
 ---
-title: Como recuperamos al bot de una muerte lenta
+title: Cómo recuperamos al bot de una muerte lenta
 slug: como-recuperamos-al-bot
 date: 2020-11-27 00:00:00
 authors: vicente
 image: /img/blog-covers/como-salvamos-el-bot.png
-categories: [Código]
+tags: [technical, code]
 ---
-# Cómo recuperamos el bot de una muerte lenta
 
 **¡Hola a todos!**
-Esta vez los desarrolladores vamos a hacer un post más técnico sobre la infraestructura de D-Safe. 
+Esta vez los desarrolladores vamos a hacer un post más técnico sobre la infraestructura de D-Safe.
 ![Blog cover](/img/blog-covers/como-salvamos-el-bot.png)
 <!--truncate-->
 Durante estos últimos meses hemos superado retos los cuales nos han hecho aprender bastante a base de dolores de cabeza. Aunque parezca extraño, **son estos retos y las dificultades lo que nos mantiene seguir queriendo continuar este proyecto** desde hace más de 2 años. Si todo fuera sencillo ya lo hubiéramos abandonado.

@@ -4,9 +4,9 @@ slug: 3k-servers
 date: 2020-06-23 00:00:00
 authors: vicente
 image: /img/blog-covers/3k.png
-categories: [Noticias]
+tags: [milestone]
 ---
-# ¡Hemos llegado a 3K de servidores!
+
 Recientemente gracias a todo el apoyo que nos han dado hemos llegado a la gran cantidad de +3.000 servidores, por ello queremos agradecer a todo el mundo el increíble apoyo que nos están dando organizando un evento que le contamos ahora.
 
 ![Blog cover](/img/blog-covers/3k.png)

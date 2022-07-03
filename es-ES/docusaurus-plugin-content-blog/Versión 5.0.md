@@ -2,10 +2,9 @@
 title: Versión 5.0
 slug: v5.0
 date: 2022-05-14 00:00:00
-authors: vicente
+authors: [vicente]
 image: /img/blog-covers/version-5.0.png
-categories: [Changelog]
-tags: [D-Safe, "5.0"]
+tags: [update, v5.0]
 ---
 
 La versión 5.0 ya está aquí, después de un largo desarrollo, esta nueva versión está enfocada en mejorar radicalmente la moderación con D-Safe y hacerla accesible para todo el mundo. 🚀🌍
@@ -206,7 +205,7 @@ Hay muchísimos arreglos de bugs pero solo incluimos los relevantes que estaban 
 ## Cosas eliminadas 💀 {#shit-removed}
 En esta versión hemos decidido quitar algunas cosas.
 
-- Comandos desactivados (solo disponibles mediante comandos de barra diagonal): info, role, server, setup, suggestions, delrole, genpassword, setprefix, blockword.
+- Comandos desactivados (solo disponibles mediante comandos de barra diagonal): info, role, server, setup, suggestions, delrole, genpassword, setprefix, blockword, logs.
 - Comandos eliminados: whitelist, baninfo, forceban, report, detect, support, alarm.
 - Se ha eliminado el soporte a los canales de tienda, fueron eliminados por Discord.
 
@@ -221,7 +220,3 @@ Los motivos para estos cambios pueden ser:
 ![gif](https://c.tenor.com/U45Q8YaJzBUAAAAC/moti-hearts.gif)
 
 Gracias a los safers que han contribuido económicamente, a los traductores por hacerlo accesible a todo el mundo, a los miembros de la beta que aportaron sus sugerencias sobre los nuevos cambios,a los testers por reportar bugs, a los nuevos desarrolladores que han aportado su granito de arena y su creatividad, **gracias a tí y a todos por hacer este proyecto una realidad**.
-
-> Dicho todo esto, espero que os guste la nueva versión, estaré unos días arreglando bugs y después me retiraré a comer cocos en una playa. 🥥🏖️
->
-> \- Vicente.

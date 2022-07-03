@@ -4,7 +4,7 @@ slug: v4.1
 date: 2020-07-18 00:00:00
 authors: vicente
 image: /img/blog-covers/version-4.1.png
-categories: [Changelog]
+tags: [update, v4.x]
 ---
 
 Bienvenidos al registro de cambios que se han hecho desde las versiones 4.1.0 a la 4.1.9.

@@ -4,9 +4,9 @@ slug: 7k-servers
 date: 2020-11-27 00:00:00
 authors: vicente
 image: /img/blog-covers/7k.png
-categories: [Noticias]
+tags: [milestone]
 ---
-# ¡Hemos llegado a 7K de servidores!
+
 Muchas gracias a todos por el gran reciente apoyo que nos han dado, el bot está alcanzando unas cifras nunca vistas.
 
 ![Blog cover](/img/blog-covers/7k.png)
